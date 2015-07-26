@@ -1,0 +1,21 @@
+\section{Kotači}
+Kako je navedeno u prethodnom poglavlju kotači se sastoje od četiri komponente. Svaka komponenta je kotač za sebe, koji ima svoju mrežu (\emph{eng. Mesh}), transformaciju, te mrežni prevoditelj (\emph{eng. Mesh Renderer}) koji dopušta korisniku da vidi konačni element. Ono što se koristi kretanje modela je kolni sudarač \emph{(eng. Wheel Collider)}.
+\vspace{2mm}
+\newline Isto tako veoma bitna stvar je povećati masu modela, inače će početi nekontrolirano rotirati na sceni, kao da je upalo u crnu rupu. Vrijednost u konačnici definira kojom silom će gravitacija privlačiti model, odnosno definiramo brzinu. Što je masa veća sporiji je model i obrnuto.
+
+\subsection{Kolni sudarači}
+Unity ima predefinirane elemente za simulirati prave kotače modela koje zovemo \textbf{kolne sudarače}. Prema dokumentaciji unity-a ovi sudarači se ne dodaju kao komponente, već trebaju biti zasebni igrajući objekti. 
+
+\subsection{Rotiranje kotača}
+Prilikom vožnje automobila za bolju simulaciju potrebno je okretati i kola. Za isprogramirati ovu naizgled jednostavnu radnju više stvari treba unaprijed biti dobro definirano, inače se stvar komplicira. Ukoliko je igrajući objekt loše definiran i pivoti nisu dobro postavljeni na kotačima, zbog mehanike koju unity koristi objekti rotiraju krivo ili treba koristit naprednije metode koje povećavaju broj linija koda i stvaraju dodatne probleme. Rotacija kotača bi trebala biti oko njegove osi, te se zato mora postaviti pivot u sredinu kotača. Ovo se obavlja tijekom izrade samog modela, te treba paziti na to prije unosa u unity. Ako se pivot nije centrirao prilikom izrade, onda se treba obavljati popravljanje. Koraci za popravljanje:
+\begin{enumerate}
+	\item Pronaći objekt (kotač) unutar hijerarhije
+	\item Napraviti novi prazni objekt na istoj razini kao i kotač
+	\item Kotač ubaciti u prazni objekt
+\end{enumerate}
+Sada za okretanje kotača se koristi novi prazni objekt jer je njegov pivot centriran. Ovakav pristup je jako učestal zbog dizajnera koji ne paze na pivote unutar svojih modela. Naredba korištena za okretanje jednog od kotača:
+\vspace{2mm}
+\small\texttt{ transform.Rotate(0f, 0f, this.speed*move*Time.deltaTime); }
+
+\subsection{Stabilizatori}
+Biti će dodan tekst...
