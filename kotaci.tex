@@ -1,10 +1,26 @@
 \section{Kotači}
-Kako je navedeno u prethodnom poglavlju kotači se sastoje od četiri komponente. Svaka komponenta je kotač za sebe, koji ima svoju mrežu (\emph{eng. Mesh}), transformaciju, te mrežni prevoditelj (\emph{eng. Mesh Renderer}) koji dopušta korisniku da vidi konačni element. Ono što se koristi kretanje modela je kolni sudarač \emph{(eng. Wheel Collider)}.
+Kako je navedeno u prethodnom poglavlju kotači se sastoje od više komponenti. Te komponente su mreža (\emph{eng. Mesh}), transformacija, te mrežni prevoditelj (\emph{eng. Mesh Renderer}) koji dopušta korisniku da vidi konačni element. Ono što se koristi za kretanje modela je kolni sudarač \emph{(eng. Wheel Collider)}. Mreža se može vidjeti na slici ~\ref{kotaci} desno, a sudarač na slici ~\ref{kotaci} lijevo.
 \vspace{2mm}
-\newline Isto tako veoma bitna stvar je povećati masu modela, inače će početi nekontrolirano rotirati na sceni, kao da je upalo u crnu rupu. Vrijednost u konačnici definira kojom silom će gravitacija privlačiti model, odnosno definiramo brzinu. Što je masa veća sporiji je model i obrnuto.
+\newline Isto tako veoma bitna stvar je povećati masu modela, inače će početi nekontrolirano rotirati na sceni, kao da je upalo u crnu rupu. Vrijednost u konačnici definira kojom silom će gravitacija privlačiti model, odnosno definiramo brzinu. Što je masa veća sporiji je igrajući objekt i obrnuto.
+
+\begin{figure}[h]
+	\includegraphics[width=12.5cm, height=6.5cm]{wheels.jpg}
+	\centering
+	\caption{Kotači modela}
+	\label{fig:kotaci}
+\end{figure}
 
 \subsection{Kolni sudarači}
-Unity ima predefinirane elemente za simulirati prave kotače modela koje zovemo \textbf{kolne sudarače}. Prema dokumentaciji unity-a ovi sudarači se ne dodaju kao komponente, već trebaju biti zasebni igrajući objekti. 
+Unity ima predefinirane elemente za simulirati prave kotače prizemljenih vozila koje zovemo \textbf{kolne sudarače}. Prema dokumentaciji unity-a ovi sudarači se ne dodaju kao komponente, već trebaju biti komponente zasebnih igrajućih objekata. Znači za svaki kotač treba napraviti novi igrajući objekt, koji se zove prazni igrajući objekt (\emph{eng. Empty GameObject}). Doda se komponenta praznom objektu i cijeli objekt se pomakne tako da je centriran sa kotačima.
+\vspace{2mm}
+\newline
+Najvažnije metode za vožnju su moment motora (\emph{eng. motor Torque}), moment kočnice (\emph{eng. brake Torque}), te kut okretanja (\emph{eng. steer angle}). Moment motora je sila koja djeluje na osovinu kotača izražena u Newton metrima. Predznak sile će odrediti smjer kretanja. Kut okretanja određuje za koliko će se okrenuti model prilikom skretanja, a moment kočnice određuje silu kočenja u Newton metrima. Primjer k\^oda za kretanje vozila se može vidjeti u ispisu~\ref{kretanjeVozila}
+
+
+\begin{lstlisting}[caption={Skripta za kretanje vozila}, label=kretanjeVozila]
+for(int i = 0; i < 4; i++)
+    this.wheelsColliders[i].motorTorque = thrustTorque;
+\end{lstlisting}
 
 \subsection{Rotiranje kotača}
 Prilikom vožnje automobila za bolju simulaciju potrebno je okretati i kola. Za isprogramirati ovu naizgled jednostavnu radnju više stvari treba unaprijed biti dobro definirano, inače se stvar komplicira. Ukoliko je igrajući objekt loše definiran i pivoti nisu dobro postavljeni na kotačima, zbog mehanike koju unity koristi objekti rotiraju krivo ili treba koristit naprednije metode koje povećavaju broj linija koda i stvaraju dodatne probleme. Rotacija kotača bi trebala biti oko njegove osi, te se zato mora postaviti pivot u sredinu kotača. Ovo se obavlja tijekom izrade samog modela, te treba paziti na to prije unosa u unity. Ako se pivot nije centrirao prilikom izrade, onda se treba obavljati popravljanje. Koraci za popravljanje:
