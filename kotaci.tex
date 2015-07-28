@@ -29,9 +29,16 @@ Prilikom vožnje automobila za bolju simulaciju potrebno je okretati i kola. Za 
 	\item Napraviti novi prazni objekt na istoj razini kao i kotač
 	\item Kotač ubaciti u prazni objekt
 \end{enumerate}
-Sada za okretanje kotača se koristi novi prazni objekt jer je njegov pivot centriran. Ovakav pristup je jako učestal zbog dizajnera koji ne paze na pivote unutar svojih modela. Naredba korištena za okretanje jednog od kotača:
+Sada za okretanje kotača se koristi novi prazni objekt jer je njegov pivot centriran. Ovakav pristup je jako učestal zbog dizajnera koji ne paze na pivote unutar svojih modela. Skripta za okretanje kola se može vidjeti u ispisu~\ref{okretanjeKola}:
+\vspace{6mm}
+\begin{lstlisting}[caption={Skripta za okretanje kola}, label=okretanjeKola]
+for (int i = 0; i < 4; i++) 
+			this.tirePivots[i].transform.Rotate(
+			    Vector3.forward, 
+			    this.speed * move * Time.deltaTime
+			);	
+\end{lstlisting}
+\subsection{Problemi u zavojima}
+Prilikom vožnje vozila dodavanjem samo kolnih sudarača ne bismo dobili potpunu imitaciju pravog vozila. Jedan od problema koji se javlja je preokretanje u zavojima. Ova pojava je sasvim opravdana i nije nikakva greška programa. Što se ustvari događa? Kada vozilo uđe u zavoj i započme skretanje, na njega djeluje centrifugalna sila, podigne se prednji kotač sa tla i kako ne postoji protusila preokrene se. 
 \vspace{2mm}
-\small\texttt{ transform.Rotate(0f, 0f, this.speed*move*Time.deltaTime); }
-
-\subsection{Stabilizatori}
-Biti će dodan tekst...
+\newline Za ovaj slučaj postoji više rješenja, a onaj koji se koristi u igrici je sljedeći. Pri skretanju se provjeri koji kotač se podiže od tla i na njega se primjeni sila koja djeluje u smjeru gravitacije. Na ovaj način se smanji utjecaj centrifugalne sile, te samim time teže preokrenuti vozilo.
