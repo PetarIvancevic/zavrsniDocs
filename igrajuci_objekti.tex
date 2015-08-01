@@ -1,2 +1,29 @@
 \section{Igrajući objekti}
-Najvažniji objekti u unity-u koji sadrže modele, teren, likove i sve što se može vidjeti u sceni se zove \textbf{igrajući objekt} (\emph{eng. GameObject}). Objekti zasebno ne znače puno bez komponenti koje se nalaze u njima. Moglo bi se reći da je igrajući objekt ustvari samo kontenjer koji sadrži pojedine komponente. Svaki igrajući objekt mora imati samo jednu transformaciju (\emph{eng. Transform}) i pivot. Transformacija se koristi za mijenjanje veličine, pozicije i rotacije objekta. Pivot definira oko čega će se rotirati i mijenjati svoju veličinu, te ne utječe na kretanje modela po x, y i z osima.
+Svaki objekt koji se može vidjeti u unity-u je \textbf{igrajući objekt} (\emph{eng. GameObject}). Kada se napravi bilo koj objekt on treba imati svoju poziciju unutar svijeta. Kako bi se mogla znati njegova pozicija koristimo komponente. Svaki objekt mora imati svoju transformaciju (\emph{eng. Transform}). U suštini igrajući objekti su samo kontenjeri koji sadrže komponente.
+\subsection{Komponente}
+Komponente su kao što je rečeno dijelovi igrajućih objekata. One daju funkcionalnost objektima, te omogućavaju krajnjim korisnicima da razlikuju igrajuće objekte. Neke važnije komponente koje su korištene za izradu igrice su:
+\begin{itemize} 
+	\item Transformacija
+	\item Sudarači
+	\item Kolni sudarači 
+\end{itemize}
+\subsubsection{Transformacija}
+Igrajući objekti moraju imati svoju \textbf{transformaciju}, inače se neće moći prikazati u svijetu. Transformacija definira širinu, poziciju i orijentaciju objekta. Svaka transformacija ima svoj pivot koji određuje centar, odnosno prema njemu se gledaju širina, pozicija i rotacija. Pivot se može gledati globalno ili lokalno. Globalno gledanje je pozicija pivota gledajući koordinate x,y,z svijeta. Lokalno gledanje pivota je relativna pozicija naspram pozicije objekta.
+\subsubsection{Sudarači}
+Dodat opis za sudarače
+
+\subsubsection{Kolni sudarači}
+Unity ima predefinirane elemente za simulirati prave kotače prizemljenih vozila koje zovemo \textbf{kolne sudarače}. Prema dokumentaciji unity-a ovi sudarači se ne dodaju kao komponente, već trebaju biti komponente zasebnih igrajućih objekata. Znači za svaki kotač treba napraviti novi igrajući objekt, koji se zove prazni igrajući objekt (\emph{eng. Empty GameObject}). Doda se komponenta praznom objektu i cijeli objekt se pomakne tako da je centriran sa kotačima.
+\vspace{2mm}
+\newline
+Najvažnije metode za vožnju su moment motora (\emph{eng. motor Torque}), moment kočnice (\emph{eng. brake Torque}), te kut okretanja (\emph{eng. steer angle}). Moment motora je sila koja djeluje na osovinu kotača izražena u Newton metrima. Predznak sile će odrediti smjer kretanja. Kut okretanja određuje za koliko će se okrenuti model prilikom skretanja, a moment kočnice određuje silu kočenja u Newton metrima. Primjer k\^oda za kretanje vozila se može vidjeti u ispisu~\ref{kretanjeVozila}
+
+
+\begin{lstlisting}[caption={Skripta za kretanje vozila}, label=kretanjeVozila]
+for(int i = 0; i < 4; i++)
+    this.wheelsColliders[i].motorTorque = thrustTorque;
+\end{lstlisting}
+
+\vspace{2mm}
+\newline Jedan propust postoji kod ovih sudarača. Naime ukoliko se postave veće brzine kretanja događa se čudna stvar. Model sam počima skretati prema desno.
+\subsection{Mrežne komponente}
