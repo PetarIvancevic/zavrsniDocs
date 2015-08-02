@@ -6,12 +6,11 @@
 \contentsline {section}{\numberline {3}Igraju\IeC {\'c}i objekti}{7}
 \contentsline {subsection}{\numberline {3.1}Komponente}{7}
 \contentsline {subsubsection}{\numberline {3.1.1}Transformacija}{7}
-\contentsline {subsection}{\numberline {3.2}Kruta tijela}{7}
-\contentsline {subsubsection}{\numberline {3.2.1}Sudara\IeC {\v c}i}{8}
-\contentsline {subsubsection}{\numberline {3.2.2}Kolni sudara\IeC {\v c}i}{8}
-\contentsline {subsection}{\numberline {3.3}Mre\IeC {\v z}ne komponente}{9}
-\contentsline {section}{\numberline {4}Skriptiranje}{10}
-\contentsline {section}{\numberline {5}Kota\IeC {\v c}i}{11}
-\contentsline {subsection}{\numberline {5.1}Rotiranje kota\IeC {\v c}a}{11}
-\contentsline {subsection}{\numberline {5.2}Problemi u zavojima}{12}
-\contentsline {section}{\numberline {6}Literatura}{13}
+\contentsline {subsubsection}{\numberline {3.1.2}Kruta tijela}{8}
+\contentsline {subsubsection}{\numberline {3.1.3}Sudara\IeC {\v c}i}{8}
+\contentsline {subsubsection}{\numberline {3.1.4}Kolni sudara\IeC {\v c}i}{8}
+\contentsline {section}{\numberline {4}Skriptiranje}{11}
+\contentsline {section}{\numberline {5}Kota\IeC {\v c}i}{12}
+\contentsline {subsection}{\numberline {5.1}Rotiranje kota\IeC {\v c}a}{12}
+\contentsline {subsection}{\numberline {5.2}Problemi u zavojima}{13}
+\contentsline {section}{\numberline {6}Literatura}{14}

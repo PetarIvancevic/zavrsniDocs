@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  2 AUG 2015 15:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  2 AUG 2015 20:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -420,17 +420,17 @@ LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <18> not available
 
 
 (./pocetna_broj_dva.tex
-Underfull \hbox (badness 10000) in paragraph at lines 14--15
+Underfull \hbox (badness 10000) in paragraph at lines 13--14
 
  []
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <16> not available
-(Font)              size <17.28> substituted on input line 17.
+(Font)              size <17.28> substituted on input line 16.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <16> not available
-(Font)              size <17.28> substituted on input line 17.
+(Font)              size <17.28> substituted on input line 16.
 
 ) [2
 
@@ -477,25 +477,33 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 6.
+ [7
 
 
-LaTeX Warning: Reference `kotaci' on page 7 undefined on input line 13.
+] [8]
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 26.
 
-[7
-
-
-]
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 23.
- (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+(/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
 LaTeX Font Info:    Font shape `OT1/pcr/bx/n' in size <10> not available
-(Font)              Font shape `OT1/pcr/b/n' tried instead on input line 24.
- [8])
-[9]
+(Font)              Font shape `OT1/pcr/b/n' tried instead on input line 27.
+
+<gotoveSlike/igrajuci_objekt.png, id=32, 1284.8pt x 803.0pt>
+File: gotoveSlike/igrajuci_objekt.png Graphic file (type png)
+
+<use gotoveSlike/igrajuci_objekt.png>
+Package pdftex.def Info: gotoveSlike/igrajuci_objekt.png used on input line 34.
+
+(pdftex.def)             Requested size: 355.64423pt x 284.534pt.
+ [9 <./gotoveSlike/igrajuci_objekt.png>]
+
+LaTeX Warning: Reference `fig:markeri' on page 10 undefined on input line 41.
+
+) [10]
 \openout2 = `skriptiranje.aux'.
 
- (./skriptiranje.tex) [10
+ (./skriptiranje.tex) [11
 
 
 ]
@@ -503,21 +511,21 @@ LaTeX Font Info:    Font shape `OT1/pcr/bx/n' in size <10> not available
 
  (./kotaci.tex
 
-LaTeX Warning: Reference `kotaci' on page 11 undefined on input line 2.
+LaTeX Warning: Reference `kotaci' on page 12 undefined on input line 2.
 
 
-LaTeX Warning: Reference `kotaci' on page 11 undefined on input line 2.
+LaTeX Warning: Reference `kotaci' on page 12 undefined on input line 2.
 
-<gotoveSlike/wheels.jpg, id=40, 1084.05pt x 602.25pt>
+<gotoveSlike/wheels.jpg, id=46, 1084.05pt x 602.25pt>
 File: gotoveSlike/wheels.jpg Graphic file (type jpg)
 
 <use gotoveSlike/wheels.jpg>
 Package pdftex.def Info: gotoveSlike/wheels.jpg used on input line 6.
 (pdftex.def)             Requested size: 355.65341pt x 184.94035pt.
- [11
+ [12
 
 
- <./gotoveSlike/wheels.jpg>]) [12]
+ <./gotoveSlike/wheels.jpg>]) [13]
 \openout2 = `literatura.aux'.
 
 
@@ -527,7 +535,7 @@ Overfull \hbox (13.6083pt too wide) in paragraph at lines 5--6
 l-stable-
  []
 
-) [13
+) [14
 
 
 ] (./main.aux (./pocetna_title.aux) (./pocetna_broj_dva.aux)
@@ -543,10 +551,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 4056 strings out of 493089
- 54770 string characters out of 6134842
+ 4064 strings out of 493089
+ 54969 string characters out of 6134842
  135737 words of memory out of 5000000
- 7422 multiletter control sequences out of 15000+600000
+ 7428 multiletter control sequences out of 15000+600000
  10093 words of font info for 36 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,5n,58p,784b,1188s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -557,10 +565,10 @@ ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
 ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texliv
 e/2015/texmf-dist/fonts/type1/urw/courier/ucrb8a.pfb></usr/local/texlive/2015/t
 exmf-dist/fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on main.pdf (13 pages, 232776 bytes).
+Output written on main.pdf (14 pages, 965637 bytes).
 PDF statistics:
- 73 PDF objects out of 1000 (max. 8388607)
- 50 compressed objects within 1 object stream
+ 79 PDF objects out of 1000 (max. 8388607)
+ 53 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
