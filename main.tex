@@ -20,13 +20,19 @@ captionpos=b,
 \author{Petar Ivančević}
 
 \begin{document}
-\maketitle
-\thispagestyle{empty}
+\begin{titlepage}
+\include{pocetna_title}
+\include{pocetna_broj_dva}
+\end{titlepage}
+\pagenumbering{arabic} 
+\setcounter{page}{3}
 
 \newpage \tableofcontents
+\include{summary}
 \include{uvod}
 \include{koristene_tehnologije}
 \include{igrajuci_objekti}
+\include{skriptiranje}
 \include{kotaci}
 \include{literatura}
 \end{document}

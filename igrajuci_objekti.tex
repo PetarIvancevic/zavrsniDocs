@@ -4,20 +4,21 @@ Svaki objekt koji se može vidjeti u unity-u je \textbf{igrajući objekt} (\emph
 Komponente su kao što je rečeno dijelovi igrajućih objekata. One daju funkcionalnost objektima, te omogućavaju krajnjim korisnicima da razlikuju igrajuće objekte. Neke važnije komponente koje su korištene za izradu igrice su:
 \begin{itemize} 
 	\item Transformacija
+	\item Kruta tijela
 	\item Sudarači
 	\item Kolni sudarači 
 \end{itemize}
 \subsubsection{Transformacija}
-Igrajući objekti moraju imati svoju \textbf{transformaciju}, inače se neće moći prikazati u svijetu. Transformacija definira širinu, poziciju i orijentaciju objekta. Svaka transformacija ima svoj pivot koji određuje centar, odnosno prema njemu se gledaju širina, pozicija i rotacija. Pivot se može gledati globalno ili lokalno. Globalno gledanje je pozicija pivota gledajući koordinate x,y,z svijeta. Lokalno gledanje pivota je relativna pozicija naspram pozicije objekta.
+Igrajući objekti moraju imati svoju \textbf{transformaciju}, inače se neće moći prikazati u svijetu. Transformacija definira širinu, poziciju i orijentaciju objekta. Svaka transformacija ima svoj pivot koji određuje centar, odnosno prema njemu se gledaju širina, pozicija i rotacija. Pivot se može gledati globalno ili lokalno. \par 
+Globalno gledanje je pozicija pivota gledajući koordinate x,y,z svijeta. Lokalno gledanje pivota je relativna pozicija naspram pozicije objekta. Primjer transformacijog elementa (\emph{ Gizmo}) se može vidjeti na ~\ref{kotaci}.
+\subsection{Kruta tijela}
+rigid body
 \subsubsection{Sudarači}
-Dodat opis za sudarače
-
+Sudarači (\emph{eng. Colliders}) su komponente koje omogućavaju igrajućim objektima fizičku koliziju. Oni se ne mogu vidjeti tokom igranja igre, a i nisu zbog toga napravljeni. Postoji više oblika sudarača (kvadar, sfera, kapsula, krug...) i svaki od njih se koristi za aproksimiranje mreže igrajućih objekata. Moguće je dodati sudarač tako da se savršeno slaže sa mrežom igrajućeg objekta, ali tada bi gubili na performansi. Jedan bolji način za bolju aproksimaciju je korištenje konveksnih (\emph{eng. Convex}) sudarača. Ovaj način dodaje mrežu sličnu modelu, ali izbaci neke dijelove. \par
+Unity u svakom trenutku provjerava da li je sudarač imao koliziju sa nekim drugim igrajućim objektom koji isto ima svoj sudarač. Kada bi se oblik postavio da savršeno odgovara mreži igrajućeg objekta, tada bi trebalo obavljati previše računanja. U igri se koristi kvadratični sudarač za tijelo modela jer veoma dobro aproksimira automobil, a za kotače se koriste kolni sudarači.
 \subsubsection{Kolni sudarači}
-Unity ima predefinirane elemente za simulirati prave kotače prizemljenih vozila koje zovemo \textbf{kolne sudarače}. Prema dokumentaciji unity-a ovi sudarači se ne dodaju kao komponente, već trebaju biti komponente zasebnih igrajućih objekata. Znači za svaki kotač treba napraviti novi igrajući objekt, koji se zove prazni igrajući objekt (\emph{eng. Empty GameObject}). Doda se komponenta praznom objektu i cijeli objekt se pomakne tako da je centriran sa kotačima.
-\vspace{2mm}
-\newline
+Unity ima predefinirane elemente za simulirati prave kotače prizemljenih vozila koje zovemo \textbf{kolne sudarače}. Prema dokumentaciji unity-a ovi sudarači se ne dodaju kao komponente, već trebaju biti komponente zasebnih igrajućih objekata. Znači za svaki kotač treba napraviti novi igrajući objekt, koji se zove prazni igrajući objekt (\emph{eng. Empty GameObject}). Doda se komponenta praznom objektu i cijeli objekt se pomakne tako da je centriran sa kotačima. \par
 Najvažnije metode za vožnju su moment motora (\emph{eng. motor Torque}), moment kočnice (\emph{eng. brake Torque}), te kut okretanja (\emph{eng. steer angle}). Moment motora je sila koja djeluje na osovinu kotača izražena u Newton metrima. Predznak sile će odrediti smjer kretanja. Kut okretanja određuje za koliko će se okrenuti model prilikom skretanja, a moment kočnice određuje silu kočenja u Newton metrima. Primjer k\^oda za kretanje vozila se može vidjeti u ispisu~\ref{kretanjeVozila}
-
 
 \begin{lstlisting}[caption={Skripta za kretanje vozila}, label=kretanjeVozila]
 for(int i = 0; i < 4; i++)
@@ -25,5 +26,6 @@ for(int i = 0; i < 4; i++)
 \end{lstlisting}
 
 \vspace{2mm}
-\newline Jedan propust postoji kod ovih sudarača. Naime ukoliko se postave veće brzine kretanja događa se čudna stvar. Model sam počima skretati prema desno.
+Jedan propust postoji kod ovih sudarača. Naime ukoliko se postave veće brzine kretanja model sam počima skretati prema desno. Prema forumima unity društva više je rješenja, iako nijedno od njih nije pomoglo u ovoj igri. Rješenje koje je primjenjeno u ovoj igri je optimizirana brzina.
 \subsection{Mrežne komponente}
+asdkoaksdo

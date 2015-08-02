@@ -1,0 +1,341 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  2 AUG 2015 15:10
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**pocetna_broj_dva.tex
+(./pocetna_broj_dva.tex
+LaTeX2e <2015/01/01>
+Babel <3.9l> and hyphenation patterns for 79 languages loaded.
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \begin{center}
+                  
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 1--1
+[] 
+ []
+
+Missing character: There is no ƒ in font cmbx12!
+Missing character: There is no å in font cmbx12!
+Missing character: There is no ≈ in font cmbx12!
+Missing character: There is no † in font cmbx12!
+
+Overfull \hbox (88.01665pt too wide) in paragraph at lines 6--6
+ \OT1/cmr/bx/n/14.4 SVEUILITE 
+ []
+
+
+Overfull \hbox (12.45001pt too wide) in paragraph at lines 6--6
+ \OT1/cmr/bx/n/14.4 U 
+ []
+
+
+Overfull \hbox (59.54997pt too wide) in paragraph at lines 6--6
+ \OT1/cmr/bx/n/14.4 SPLITU 
+ []
+
+Missing character: There is no ƒ in font cmbx12!
+Missing character: There is no å in font cmbx12!
+Missing character: There is no ≈ in font cmbx12!
+Missing character: There is no † in font cmbx12!
+Missing character: There is no ƒ in font cmbx12!
+Missing character: There is no å in font cmbx12!
+
+Overfull \hbox (84.81668pt too wide) in paragraph at lines 7--7
+ []\OT1/cmr/bx/n/14.4 SVEUILINI 
+ []
+
+
+Overfull \hbox (53.31664pt too wide) in paragraph at lines 7--7
+ \OT1/cmr/bx/n/14.4 ODJEL 
+ []
+
+
+Overfull \hbox (22.13333pt too wide) in paragraph at lines 7--7
+ \OT1/cmr/bx/n/14.4 ZA 
+ []
+
+
+Overfull \hbox (67.64998pt too wide) in paragraph at lines 7--7
+ \OT1/cmr/bx/n/14.4 STRUNE 
+ []
+
+
+Overfull \hbox (70.16666pt too wide) in paragraph at lines 7--7
+ \OT1/cmr/bx/n/14.4 STUDIJE 
+ []
+
+
+Overfull \hbox (65.26663pt too wide) in paragraph at lines 8--9
+ []\OT1/cmr/bx/n/14.4 ODSJEK 
+ []
+
+
+Overfull \hbox (22.13333pt too wide) in paragraph at lines 8--9
+ \OT1/cmr/bx/n/14.4 ZA 
+ []
+
+
+Overfull \hbox (24.1pt too wide) in paragraph at lines 8--9
+ \OT1/cmr/bx/n/14.4 IN- 
+ []
+
+
+Overfull \hbox (39.38329pt too wide) in paragraph at lines 8--9
+ \OT1/cmr/bx/n/14.4 FOR- 
+ []
+
+
+Overfull \hbox (33.0pt too wide) in paragraph at lines 8--9
+ \OT1/cmr/bx/n/14.4 MA- 
+ []
+
+
+Overfull \hbox (23.13332pt too wide) in paragraph at lines 8--9
+ \OT1/cmr/bx/n/14.4 CI- 
+ []
+
+
+Overfull \hbox (40.68332pt too wide) in paragraph at lines 8--9
+ \OT1/cmr/bx/n/14.4 JSKE 
+ []
+
+
+Overfull \hbox (119.06659pt too wide) in paragraph at lines 8--9
+ \OT1/cmr/bx/n/14.4 TEHNOLOGIJE 
+ []
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <18> not available
+(Font)              size <17.28> substituted on input line 11.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <18> not available
+(Font)              size <17.28> substituted on input line 11.
+
+Missing character: There is no ƒ in font cmbx12!
+Missing character: There is no å in font cmbx12!
+Missing character: There is no ƒ in font cmbx12!
+Missing character: There is no Ü in font cmbx12!
+
+Overfull \hbox (67.12pt too wide) in paragraph at lines 11--11
+ []\OT1/cmr/bx/n/17.28 PETAR 
+ []
+
+
+Overfull \hbox (84.32004pt too wide) in paragraph at lines 11--11
+ \OT1/cmr/bx/n/17.28 IVANEVI 
+ []
+
+
+Overfull \hbox (107.96664pt too wide) in paragraph at lines 14--15
+[]\OT1/cmr/bx/n/14.4 PREDMET:
+ []
+
+
+Overfull \hbox (29.0833pt too wide) in paragraph at lines 14--15
+\OT1/cmr/bx/n/14.4 OB-
+ []
+
+
+Overfull \hbox (37.08333pt too wide) in paragraph at lines 14--15
+\OT1/cmr/bx/n/14.4 JEK-
+ []
+
+
+Overfull \hbox (36.09996pt too wide) in paragraph at lines 14--15
+\OT1/cmr/bx/n/14.4 TNO
+ []
+
+
+Overfull \hbox (40.26663pt too wide) in paragraph at lines 14--15
+\OT1/cmr/bx/n/14.4 PRO-
+ []
+
+
+Overfull \hbox (63.85pt too wide) in paragraph at lines 14--15
+\OT1/cmr/bx/n/14.4 GRAMI-
+ []
+
+
+Overfull \hbox (55.98335pt too wide) in paragraph at lines 14--15
+\OT1/cmr/bx/n/14.4 RANJE 
+ []
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 16--16
+[] 
+ []
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <16> not available
+(Font)              size <17.28> substituted on input line 17.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <16> not available
+(Font)              size <17.28> substituted on input line 17.
+
+Missing character: There is no ≈ in font cmbx12!
+Missing character: There is no † in font cmbx12!
+
+Overfull \hbox (76.02003pt too wide) in paragraph at lines 17--18
+ \OT1/cmr/bx/n/17.28 ZAVRNI 
+ []
+
+
+Overfull \hbox (44.08003pt too wide) in paragraph at lines 17--18
+ \OT1/cmr/bx/n/17.28 RAD 
+ []
+
+Missing character: There is no ƒ in font cmbx12!
+Missing character: There is no ç in font cmbx12!
+Missing character: There is no ƒ in font cmbx12!
+Missing character: There is no á in font cmbx12!
+
+Overfull \hbox (98.87502pt too wide) in paragraph at lines 20--20
+[]\OT1/cmr/bx/n/12 KANDIDAT:
+ []
+
+
+Overfull \hbox (32.33334pt too wide) in paragraph at lines 20--20
+\OT1/cmr/bx/n/12 Petar
+ []
+
+
+Overfull \hbox (42.5pt too wide) in paragraph at lines 20--20
+\OT1/cmr/bx/n/12 Ivanevi 
+ []
+
+Missing character: There is no ≈ in font cmbx12!
+Missing character: There is no † in font cmbx12!
+
+Overfull \hbox (61.25pt too wide) in paragraph at lines 21--21
+[]\OT1/cmr/bx/n/12 TEMA
+ []
+
+
+Overfull \hbox (22.94444pt too wide) in paragraph at lines 21--21
+\OT1/cmr/bx/n/12 ZA-
+ []
+
+
+Overfull \hbox (51.56944pt too wide) in paragraph at lines 21--21
+\OT1/cmr/bx/n/12 VRNOG
+ []
+
+
+Overfull \hbox (44.18057pt too wide) in paragraph at lines 21--21
+\OT1/cmr/bx/n/12 RADA:
+ []
+
+
+Overfull \hbox (37.16669pt too wide) in paragraph at lines 21--21
+\OT1/cmr/bx/n/12 Izrada
+ []
+
+
+Overfull \hbox (17.09723pt too wide) in paragraph at lines 21--21
+\OT1/cmr/bx/n/12 3D
+ []
+
+
+Overfull \hbox (22.17361pt too wide) in paragraph at lines 21--21
+\OT1/cmr/bx/n/12 igre
+ []
+
+
+Overfull \hbox (7.5pt too wide) in paragraph at lines 21--21
+\OT1/cmr/bx/n/12 u
+ []
+
+
+Overfull \hbox (33.62502pt too wide) in paragraph at lines 21--21
+\OT1/cmr/bx/n/12 Unity 
+ []
+
+Missing character: There is no ƒ in font cmbx12!
+Missing character: There is no á in font cmbx12!
+
+Overfull \hbox (85.56946pt too wide) in paragraph at lines 22--23
+[]\OT1/cmr/bx/n/12 MENTOR:
+ []
+
+
+Overfull \hbox (26.25pt too wide) in paragraph at lines 22--23
+\OT1/cmr/bx/n/12 dipl.
+ []
+
+
+Overfull \hbox (21.75pt too wide) in paragraph at lines 22--23
+\OT1/cmr/bx/n/12 ing.
+ []
+
+
+Overfull \hbox (24.23611pt too wide) in paragraph at lines 22--23
+\OT1/cmr/bx/n/12 Ljil-
+ []
+
+
+Overfull \hbox (24.75pt too wide) in paragraph at lines 22--23
+\OT1/cmr/bx/n/12 jana
+ []
+
+
+Overfull \hbox (50.70695pt too wide) in paragraph at lines 22--23
+\OT1/cmr/bx/n/12 Despala-
+ []
+
+
+Overfull \hbox (22.5pt too wide) in paragraph at lines 22--23
+\OT1/cmr/bx/n/12 tovi 
+ []
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 24--24
+[] 
+ []
+
+
+Overfull \hbox (37.79991pt too wide) in paragraph at lines 26--27
+ \OT1/cmr/bx/n/14.4 Split, 
+ []
+
+
+Overfull \hbox (21.01665pt too wide) in paragraph at lines 26--27
+ \OT1/cmr/bx/n/14.4 ru- 
+ []
+
+
+Overfull \hbox (21.82497pt too wide) in paragraph at lines 26--27
+ \OT1/cmr/bx/n/14.4 jan 
+ []
+
+
+Overfull \hbox (36.89995pt too wide) in paragraph at lines 26--27
+ \OT1/cmr/bx/n/14.4 2015. 
+ []
+
+)
+! Emergency stop.
+<*> pocetna_broj_dva.tex
+                        
+*** (job aborted, no legal \end found)
+
+ 
+Here is how much of TeX's memory you used:
+ 21 strings out of 493089
+ 367 string characters out of 6134842
+ 55199 words of memory out of 5000000
+ 3603 multiletter control sequences out of 15000+600000
+ 5456 words of font info for 20 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 14i,1n,10p,132b,135s stack positions out of 5000i,500n,10000p,200000b,80000s
+!  ==> Fatal error occurred, no output PDF file produced!

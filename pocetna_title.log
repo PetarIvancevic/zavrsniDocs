@@ -1,0 +1,248 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  2 AUG 2015 14:02
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**pocetna_title.tex
+(./pocetna_title.tex
+LaTeX2e <2015/01/01>
+Babel <3.9l> and hyphenation patterns for 79 languages loaded.
+
+! LaTeX Error: Environment titlepage undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \begin{titlepage}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2 \begin{center}
+                  
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 2--2
+[] 
+ []
+
+Missing character: There is no Ä in font cmbx12!
+Missing character: There is no Œ in font cmbx12!
+Missing character: There is no Å in font cmbx12!
+Missing character: There is no   in font cmbx12!
+
+Overfull \hbox (88.01665pt too wide) in paragraph at lines 6--6
+ \OT1/cmr/bx/n/14.4 SVEUILITE 
+ []
+
+
+Overfull \hbox (12.45001pt too wide) in paragraph at lines 6--6
+ \OT1/cmr/bx/n/14.4 U 
+ []
+
+
+Overfull \hbox (59.54997pt too wide) in paragraph at lines 6--6
+ \OT1/cmr/bx/n/14.4 SPLITU 
+ []
+
+Missing character: There is no Ä in font cmbx12!
+Missing character: There is no Œ in font cmbx12!
+Missing character: There is no Å in font cmbx12!
+Missing character: There is no   in font cmbx12!
+Missing character: There is no Ä in font cmbx12!
+Missing character: There is no Œ in font cmbx12!
+
+Overfull \hbox (84.81668pt too wide) in paragraph at lines 7--7
+ []\OT1/cmr/bx/n/14.4 SVEUILINI 
+ []
+
+
+Overfull \hbox (53.31664pt too wide) in paragraph at lines 7--7
+ \OT1/cmr/bx/n/14.4 ODJEL 
+ []
+
+
+Overfull \hbox (22.13333pt too wide) in paragraph at lines 7--7
+ \OT1/cmr/bx/n/14.4 ZA 
+ []
+
+
+Overfull \hbox (67.64998pt too wide) in paragraph at lines 7--7
+ \OT1/cmr/bx/n/14.4 STRUNE 
+ []
+
+
+Overfull \hbox (70.16666pt too wide) in paragraph at lines 7--7
+ \OT1/cmr/bx/n/14.4 STUDIJE 
+ []
+
+
+Overfull \hbox (65.26663pt too wide) in paragraph at lines 8--9
+ []\OT1/cmr/bx/n/14.4 ODSJEK 
+ []
+
+
+Overfull \hbox (22.13333pt too wide) in paragraph at lines 8--9
+ \OT1/cmr/bx/n/14.4 ZA 
+ []
+
+
+Overfull \hbox (24.1pt too wide) in paragraph at lines 8--9
+ \OT1/cmr/bx/n/14.4 IN- 
+ []
+
+
+Overfull \hbox (39.38329pt too wide) in paragraph at lines 8--9
+ \OT1/cmr/bx/n/14.4 FOR- 
+ []
+
+
+Overfull \hbox (33.0pt too wide) in paragraph at lines 8--9
+ \OT1/cmr/bx/n/14.4 MA- 
+ []
+
+
+Overfull \hbox (23.13332pt too wide) in paragraph at lines 8--9
+ \OT1/cmr/bx/n/14.4 CI- 
+ []
+
+
+Overfull \hbox (40.68332pt too wide) in paragraph at lines 8--9
+ \OT1/cmr/bx/n/14.4 JSKE 
+ []
+
+
+Overfull \hbox (119.06659pt too wide) in paragraph at lines 8--9
+ \OT1/cmr/bx/n/14.4 TEHNOLOGIJE 
+ []
+
+Missing character: There is no Ä in font cmbx12!
+Missing character: There is no Œ in font cmbx12!
+Missing character: There is no Ä in font cmbx12!
+Missing character: There is no † in font cmbx12!
+
+Overfull \hbox (96.64043pt too wide) in paragraph at lines 11--11
+ []\OT1/cmr/bx/n/24.88 PETAR 
+ []
+
+
+Overfull \hbox (121.40535pt too wide) in paragraph at lines 11--11
+ \OT1/cmr/bx/n/24.88 IVANEVI 
+ []
+
+Missing character: There is no Å in font cmbx12!
+Missing character: There is no   in font cmbx12!
+
+Overfull \hbox (63.35002pt too wide) in paragraph at lines 15--15
+ []\OT1/cmr/bx/n/14.4 ZAVRNI 
+ []
+
+
+Overfull \hbox (36.73335pt too wide) in paragraph at lines 15--15
+ \OT1/cmr/bx/n/14.4 RAD 
+ []
+
+
+Overfull \hbox (64.45001pt too wide) in paragraph at lines 17--18
+ []\OT1/cmr/bx/n/14.4 IZRADA 
+ []
+
+
+Overfull \hbox (20.51666pt too wide) in paragraph at lines 17--18
+ \OT1/cmr/bx/n/14.4 3D 
+ []
+
+
+Overfull \hbox (41.48334pt too wide) in paragraph at lines 17--18
+ \OT1/cmr/bx/n/14.4 IGRE 
+ []
+
+
+Overfull \hbox (12.45001pt too wide) in paragraph at lines 17--18
+ \OT1/cmr/bx/n/14.4 U 
+ []
+
+
+Overfull \hbox (54.65001pt too wide) in paragraph at lines 17--18
+ \OT1/cmr/bx/n/14.4 UNITY 
+ []
+
+! Undefined control sequence.
+l.20 {\large
+             Split, rujan 2015.}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (37.79991pt too wide) in paragraph at lines 20--21
+ []\OT1/cmr/bx/n/14.4 Split, 
+ []
+
+
+Overfull \hbox (21.01665pt too wide) in paragraph at lines 20--21
+ \OT1/cmr/bx/n/14.4 ru- 
+ []
+
+
+Overfull \hbox (21.82497pt too wide) in paragraph at lines 20--21
+ \OT1/cmr/bx/n/14.4 jan 
+ []
+
+
+Overfull \hbox (36.89995pt too wide) in paragraph at lines 20--21
+ \OT1/cmr/bx/n/14.4 2015. 
+ []
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.21 \end{center}
+                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+! LaTeX Error: \begin{document} ended by \end{titlepage}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.22 \end{titlepage}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+)
+! Emergency stop.
+<*> pocetna_title.tex
+                     
+*** (job aborted, no legal \end found)
+
+ 
+Here is how much of TeX's memory you used:
+ 19 strings out of 493089
+ 318 string characters out of 6134842
+ 54199 words of memory out of 5000000
+ 3601 multiletter control sequences out of 15000+600000
+ 4851 words of font info for 18 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 14i,1n,9p,108b,139s stack positions out of 5000i,500n,10000p,200000b,80000s
+!  ==> Fatal error occurred, no output PDF file produced!
