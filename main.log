@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  3 AUG 2015 10:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  4 AUG 2015 01:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -503,29 +503,29 @@ LaTeX Warning: Reference `fig:markeri' on page 10 undefined on input line 39.
 ) [10] [11]
 \openout2 = `skriptiranje.aux'.
 
- (./skriptiranje.tex) [12
+ (./skriptiranje.tex [12
 
 
-]
+]) [13]
 \openout2 = `kotaci.aux'.
 
  (./kotaci.tex
 
-LaTeX Warning: Reference `kotaci' on page 13 undefined on input line 2.
+LaTeX Warning: Reference `kotaci' on page 14 undefined on input line 2.
 
 
-LaTeX Warning: Reference `kotaci' on page 13 undefined on input line 2.
+LaTeX Warning: Reference `kotaci' on page 14 undefined on input line 2.
 
-<gotoveSlike/wheels.jpg, id=49, 1084.05pt x 602.25pt>
+<gotoveSlike/wheels.jpg, id=53, 1084.05pt x 602.25pt>
 File: gotoveSlike/wheels.jpg Graphic file (type jpg)
 
 <use gotoveSlike/wheels.jpg>
 Package pdftex.def Info: gotoveSlike/wheels.jpg used on input line 6.
 (pdftex.def)             Requested size: 355.65341pt x 184.94035pt.
- [13
+ [14
 
 
- <./gotoveSlike/wheels.jpg>]) [14]
+ <./gotoveSlike/wheels.jpg>]) [15]
 \openout2 = `literatura.aux'.
 
 
@@ -535,7 +535,7 @@ Overfull \hbox (13.6083pt too wide) in paragraph at lines 5--6
 l-stable-
  []
 
-) [15
+) [16
 
 
 ] (./main.aux (./pocetna_title.aux) (./pocetna_broj_dva.aux)
@@ -551,10 +551,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 4064 strings out of 493089
- 54969 string characters out of 6134842
- 135737 words of memory out of 5000000
- 7428 multiletter control sequences out of 15000+600000
+ 4083 strings out of 493089
+ 55219 string characters out of 6134842
+ 137737 words of memory out of 5000000
+ 7447 multiletter control sequences out of 15000+600000
  10093 words of font info for 36 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,5n,58p,784b,1188s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -565,10 +565,10 @@ ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
 ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texliv
 e/2015/texmf-dist/fonts/type1/urw/courier/ucrb8a.pfb></usr/local/texlive/2015/t
 exmf-dist/fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on main.pdf (15 pages, 968264 bytes).
+Output written on main.pdf (16 pages, 974712 bytes).
 PDF statistics:
- 82 PDF objects out of 1000 (max. 8388607)
- 55 compressed objects within 1 object stream
+ 85 PDF objects out of 1000 (max. 8388607)
+ 57 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

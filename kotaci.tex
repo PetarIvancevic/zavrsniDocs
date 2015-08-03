@@ -1,5 +1,5 @@
 \section{Kotači}
-Kako je navedeno u prethodnom poglavlju kotači se sastoje od više komponenti. Te komponente su mreža (\emph{eng. Mesh}), transformacija, te mrežni prevoditelj (\emph{eng. Mesh Renderer}) koji dopušta korisniku da vidi konačni element. Ono što se koristi za kretanje modela je kolni sudarač \emph{(eng. Wheel Collider)}. Mreža se može vidjeti na slici ~\ref{kotaci} desno, a sudarač na slici ~\ref{kotaci} lijevo. \par
+Kako je navedeno u prethodnom poglavlju kotači se sastoje od više komponenti. Te komponente su mreža (\emph{eng. Mesh}), transformacija, te mrežni prevoditelj (\emph{eng. Mesh Renderer}) koji dopušta korisniku da vidi konačni element. Ono što se koristi za kretanje modela je kolni sudarač. Mreža se može vidjeti na slici ~\ref{kotaci} desno, a sudarač na slici ~\ref{kotaci} lijevo. \par
 Isto tako veoma bitna stvar je povećati masu modela, inače će početi nekontrolirano rotirati na sceni, kao da je upalo u crnu rupu. Vrijednost u konačnici definira kojom silom će gravitacija privlačiti model, odnosno definiramo brzinu. Što je masa veća sporiji je igrajući objekt i obrnuto.
 
 \begin{figure}[h]
@@ -17,7 +17,6 @@ Prilikom vožnje automobila za bolju simulaciju potrebno je okretati i kola. Za 
 	\item Kotač ubaciti u prazni objekt
 \end{enumerate}
 Sada za okretanje kotača se koristi novi prazni objekt jer je njegov pivot centriran. Ovakav pristup je jako učestal zbog dizajnera koji ne paze na pivote unutar svojih modela. Skripta za okretanje kola se može vidjeti u ispisu~\ref{okretanjeKola}:
-\vspace{6mm}
 \begin{lstlisting}[caption={Skripta za okretanje kola}, label=okretanjeKola]
 for (int i = 0; i < 4; i++) 
 			this.tirePivots[i].transform.Rotate(
