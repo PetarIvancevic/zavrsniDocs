@@ -9,8 +9,11 @@
 \contentsline {subsubsection}{\numberline {3.1.2}Kruta tijela}{8}
 \contentsline {subsubsection}{\numberline {3.1.3}Sudara\IeC {\v c}i}{8}
 \contentsline {subsubsection}{\numberline {3.1.4}Kolni sudara\IeC {\v c}i}{8}
-\contentsline {section}{\numberline {4}Skriptiranje}{11}
-\contentsline {section}{\numberline {5}Kota\IeC {\v c}i}{12}
-\contentsline {subsection}{\numberline {5.1}Rotiranje kota\IeC {\v c}a}{12}
-\contentsline {subsection}{\numberline {5.2}Problemi u zavojima}{13}
-\contentsline {section}{\numberline {6}Literatura}{14}
+\contentsline {subsection}{\numberline {3.2}Kamera}{10}
+\contentsline {subsection}{\numberline {3.3}Svijetlo}{10}
+\contentsline {subsection}{\numberline {3.4}Prefab}{11}
+\contentsline {section}{\numberline {4}Skriptiranje}{12}
+\contentsline {section}{\numberline {5}Kota\IeC {\v c}i}{13}
+\contentsline {subsection}{\numberline {5.1}Rotiranje kota\IeC {\v c}a}{13}
+\contentsline {subsection}{\numberline {5.2}Problemi u zavojima}{14}
+\contentsline {section}{\numberline {6}Literatura}{15}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  2 AUG 2015 20:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  3 AUG 2015 10:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -481,29 +481,29 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 
 
 ] [8]
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 26.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 24.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
 LaTeX Font Info:    Font shape `OT1/pcr/bx/n' in size <10> not available
-(Font)              Font shape `OT1/pcr/b/n' tried instead on input line 27.
+(Font)              Font shape `OT1/pcr/b/n' tried instead on input line 25.
 
 <gotoveSlike/igrajuci_objekt.png, id=32, 1284.8pt x 803.0pt>
 File: gotoveSlike/igrajuci_objekt.png Graphic file (type png)
 
 <use gotoveSlike/igrajuci_objekt.png>
-Package pdftex.def Info: gotoveSlike/igrajuci_objekt.png used on input line 34.
+Package pdftex.def Info: gotoveSlike/igrajuci_objekt.png used on input line 32.
 
 (pdftex.def)             Requested size: 355.64423pt x 284.534pt.
  [9 <./gotoveSlike/igrajuci_objekt.png>]
 
-LaTeX Warning: Reference `fig:markeri' on page 10 undefined on input line 41.
+LaTeX Warning: Reference `fig:markeri' on page 10 undefined on input line 39.
 
-) [10]
+) [10] [11]
 \openout2 = `skriptiranje.aux'.
 
- (./skriptiranje.tex) [11
+ (./skriptiranje.tex) [12
 
 
 ]
@@ -511,21 +511,21 @@ LaTeX Warning: Reference `fig:markeri' on page 10 undefined on input line 41.
 
  (./kotaci.tex
 
-LaTeX Warning: Reference `kotaci' on page 12 undefined on input line 2.
+LaTeX Warning: Reference `kotaci' on page 13 undefined on input line 2.
 
 
-LaTeX Warning: Reference `kotaci' on page 12 undefined on input line 2.
+LaTeX Warning: Reference `kotaci' on page 13 undefined on input line 2.
 
-<gotoveSlike/wheels.jpg, id=46, 1084.05pt x 602.25pt>
+<gotoveSlike/wheels.jpg, id=49, 1084.05pt x 602.25pt>
 File: gotoveSlike/wheels.jpg Graphic file (type jpg)
 
 <use gotoveSlike/wheels.jpg>
 Package pdftex.def Info: gotoveSlike/wheels.jpg used on input line 6.
 (pdftex.def)             Requested size: 355.65341pt x 184.94035pt.
- [12
+ [13
 
 
- <./gotoveSlike/wheels.jpg>]) [13]
+ <./gotoveSlike/wheels.jpg>]) [14]
 \openout2 = `literatura.aux'.
 
 
@@ -535,7 +535,7 @@ Overfull \hbox (13.6083pt too wide) in paragraph at lines 5--6
 l-stable-
  []
 
-) [14
+) [15
 
 
 ] (./main.aux (./pocetna_title.aux) (./pocetna_broj_dva.aux)
@@ -565,10 +565,10 @@ ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
 ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texliv
 e/2015/texmf-dist/fonts/type1/urw/courier/ucrb8a.pfb></usr/local/texlive/2015/t
 exmf-dist/fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on main.pdf (14 pages, 965637 bytes).
+Output written on main.pdf (15 pages, 968264 bytes).
 PDF statistics:
- 79 PDF objects out of 1000 (max. 8388607)
- 53 compressed objects within 1 object stream
+ 82 PDF objects out of 1000 (max. 8388607)
+ 55 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
