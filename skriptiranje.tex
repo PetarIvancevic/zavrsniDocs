@@ -7,7 +7,7 @@ Izrada skripti se može na više načina. Najjednostvniji način je preko botuna
 	\item Unityscript - jezik baziran na Javascriptu
 \end{itemize}
 \subsubsection{Sadržaj skripti}
-Otvaranjem novoizrađene skripte može se vidjeti sadržaj. Unity omogućava da programer sam odabere program za otvaranje skripti, ali zadani program je MonoDevelop. U ispisu \ref{primjerSkripte}  moguće je vidjeti izgled C\# skripte.
+Otvaranjem novoizrađene skripte može se vidjeti sadržaj. Unity omogućava da programer sam odabere program za otvaranje skripti, ali zadani program je MonoDevelop. U ispisu \ref{primjerSkripte}  je primjer C\# skripte.
 
 \begin{lstlisting}[caption={Primjer skripte}, label=primjerSkripte]
 using UnityEngine;
@@ -25,11 +25,12 @@ public class MainPlayer : MonoBehaviour {
 }
 \end{lstlisting}
 Start metoda se koristi za incijalizaciju varijabli prilikom pokretanja programa. Ova metoda \textbf{nije konstruktor}, već unity preuzima odgovornost za sve konstruktore. Velika greška bi bila definiranje specijalnih konstruktora i vrlo vjerojatno ne bi ništa radilo. \par
-Druga metoda koja je generirana na početku se pokreće svake promjene okvira (\emph{eng. Frame}). Zanimljivo je što postoje tri varijacije ove metode.
+Druga metoda koja je generirana se pokreće za broj slika u sekundi (\emph{eng. frame per second fps}). Zanimljivo je da postoje tri varijacije ove metode.
 \begin{itemize} 
 	\item Update
 	\item FixedUpdate - koji bi se trebao koristiti, ukoliko igrajući objekt sadrži kruto tijelo
 	\item LateUpdate - se pokreće nakon svih drugih update funkcija, a korisna je za mijenjanje pozicije kamere jer se trebaju prvo pomaknuti svi objekti, a tek onda kamera. 
 \end{itemize}
+Kod sve tri metode se često upotrebljava varijabla \textit{Time.deltaTime}, koja je decimalna vrijednost vremena između svake slike. Ukoliko bi se željelo isprogramirati da se nešto kreće dvadeset metara po sekundi, tada se ova varijabla samo pomnoži sa brojem 20.
 \subsubsection{Pokretanje igrajućih objekata}
 Dodat kako se mogu pokretat igrajući objekti...
