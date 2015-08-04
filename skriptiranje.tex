@@ -1,12 +1,12 @@
 \section{Skriptiranje}
 Skriptiranje (\emph{eng. scripting}) je jedan od osnovnih dijelova svaki igre jer svaku igru je potrebno definirati određena pravila, te nekakav mehanizam koji će motriti sve igrajuće objekte i provjeravati da li se drže tih pravila. Skripte isto tako omogućavaju stvaranje grafičkih efekata korištenjem ugrađenih metoda ili mijenjanje same fizike igre tokom igranja.
-\subsubsection{Izrada i korištenje skripti}
+\subsection{Izrada i korištenje skripti}
 Izrada skripti se može na više načina. Najjednostvniji način je preko botuna za dodavanje komponenti igrajućem objektu, te odabirom nova skripta (\emph{eng. new script}). Na ovaj način istovremeno se napravi skripta i pridruži igrajućem objektu. Kako je već navedno unity dopušta pisanje skripti u dva jezika:
 \begin{itemize} 
 	\item C\# - industrijski standard, jezik koji je veoma sličan Javi ili C++
 	\item Unityscript - jezik baziran na Javascriptu
 \end{itemize}
-\subsubsection{Sadržaj skripti}
+\subsection{Sadržaj skripti}
 Otvaranjem novoizrađene skripte može se vidjeti sadržaj. Unity omogućava da programer sam odabere program za otvaranje skripti, ali zadani program je MonoDevelop. U ispisu \ref{primjerSkripte}  je primjer C\# skripte.
 
 \begin{lstlisting}[caption={Primjer skripte}, label=primjerSkripte]
@@ -32,5 +32,25 @@ Druga metoda koja je generirana se pokreće za broj slika u sekundi (\emph{eng. 
 	\item LateUpdate - se pokreće nakon svih drugih update funkcija, a korisna je za mijenjanje pozicije kamere jer se trebaju prvo pomaknuti svi objekti, a tek onda kamera. 
 \end{itemize}
 Kod sve tri metode se često upotrebljava varijabla \textit{Time.deltaTime}, koja je decimalna vrijednost vremena između svake slike. Ukoliko bi se željelo isprogramirati da se nešto kreće dvadeset metara po sekundi, tada se ova varijabla samo pomnoži sa brojem 20.
-\subsubsection{Pokretanje igrajućih objekata}
-Dodat kako se mogu pokretat igrajući objekti...
+\subsection{Pokretanje igrajućih objekata}
+Ako se napravi skripta preko \emph{Assets > Create > C\# Script}, tada prilikom pokretanja igra se skripta neće izvršavati jer nije pridružena igrajućem objektu. Samo skripte koje su pridružene igrajućim objektima će se pokretati. Za provjeru da li funkcionira skripta se može koristiti naredba za debugiranje \emph{Debug.Log("Skripta radi!")}, koja se napiše u neku od metoda. Kako je navedeno igrajući objekti su samo kontenjeri za komponente, što znači da ukoliko želimo upravljati igrajućim objektima potrebno je upravljati komponentama. Primjer dohvaćanja komponenti se može vidjeti u ispisu \ref{dohvacanjeObjekata}. 
+\begin{lstlisting}[caption={Dohvaćanje objekata}, label=dohvacanjeObjekata]
+for (int i = 0; i < 4; i++) {
+	this.tires[i] = GameObject.Find(this.tireNames[i]);
+	this.tirePivots[i] = GameObject.Find(this.tirePivotNames[i]);
+}
+\end{lstlisting}
+\subsection{Funkcije događaja}
+Skripte u unity-u nisu kao u drugim programskim jezicima da se vrte u beskonačnoj petlji dok ne završe dani zadatak. Unity funkcionira tako da prebacuje kontrolu funkcijama koje se trebaju izvršiti, koje nakon izvršavanja vrate kontrolu natrag unity-u. Ovakve funkcije se zovu funkcije događaja (\emph{eng. Event functions}). Neke od najučestalijih koje se koriste su:
+\begin{itemize} 
+	\item Regularna ažuriranja događaja (\emph{eng. Regular update events}) - sve funkcije koje se pokreću za animiranje ili manipuliranje likovima (Update, LateUpdate, FixedUpdate)
+	\item Inicijalizacijski događaji (\emph{eng. Initialization Events}) - funkcije koje se pokreću na početku pokretanja unity-a. Spomenuta je Start, ali postoji i buđenje (\emph{Awake}). Awake se poziva za svaki igrajući objekt prije nego što se scena napravi. (Awake se pokreće prije Start)
+	\item Fizički događaji (\emph{eng. Physics Events}) - sve funkcije koje se pokreću kada se dogodi kolizija igrajućih objekata
+\end{itemize}
+\begin{figure}[h]
+	\includegraphics[width=12.5cm, height=8cm]{roadMarkers.png}
+	\centering
+	\caption{Markeri putanje}
+	\label{fig:markeriPutanje}
+\end{figure}
+\subsubsection{Razlike funkcija događaja}
