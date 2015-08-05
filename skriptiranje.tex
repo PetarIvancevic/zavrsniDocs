@@ -33,7 +33,7 @@ Druga metoda koja je generirana se pokreće za broj slika u sekundi (\emph{eng. 
 \end{itemize}
 Kod sve tri metode se često upotrebljava varijabla \textit{Time.deltaTime}, koja je decimalna vrijednost vremena između svake slike. Ukoliko bi se željelo isprogramirati da se nešto kreće dvadeset metara po sekundi, tada se ova varijabla samo pomnoži sa brojem 20.
 \subsection{Pokretanje igrajućih objekata}
-Ako se napravi skripta preko \emph{Assets > Create > C\# Script}, tada prilikom pokretanja igra se skripta neće izvršavati jer nije pridružena igrajućem objektu. Samo skripte koje su pridružene igrajućim objektima će se pokretati. Za provjeru da li funkcionira skripta se može koristiti naredba za debugiranje \emph{Debug.Log("Skripta radi!")}, koja se napiše u neku od metoda. Kako je navedeno igrajući objekti su samo kontenjeri za komponente, što znači da ukoliko želimo upravljati igrajućim objektima potrebno je upravljati komponentama. Primjer dohvaćanja komponenti se može vidjeti u ispisu \ref{dohvacanjeObjekata}. 
+Ako se napravi skripta preko \emph{Assets > Create > C\# Script}, tada prilikom pokretanja igra se skripta neće izvršavati jer nije pridružena igrajućem objektu. Samo skripte koje su pridružene igrajućim objektima će se pokretati. Za provjeru da li funkcionira skripta se može koristiti naredba za debugiranje \emph{Debug.Log("Skripta radi!")}. Kako je navedeno igrajući objekti su samo kontenjeri za komponente, što znači da ukoliko je želja upravljati igrajućim objektima potrebno je upravljati komponentama. Primjer dohvaćanja komponenti se može vidjeti u ispisu \ref{dohvacanjeObjekata}. 
 \begin{lstlisting}[caption={Dohvaćanje objekata}, label=dohvacanjeObjekata]
 for (int i = 0; i < 4; i++) {
 	this.tires[i] = GameObject.Find(this.tireNames[i]);
@@ -53,4 +53,22 @@ Skripte u unity-u nisu kao u drugim programskim jezicima da se vrte u beskonačn
 	\caption{Markeri putanje}
 	\label{fig:markeriPutanje}
 \end{figure}
-\subsubsection{Razlike funkcija događaja}
+\subsubsection{Razlike fizičkih funkcija događaja}
+Unity razlikuje dva različita tipa ovih funkcija. One koje se pozivaju prilikom kontakta sa igrajućim objektom i one koje imaju na sudaračima označeno da je okidač (\emph{eng. Trigger}). Svaka od ovih prima parametar, a isto tako se razlikuju i po tome. Imena funkcija moraju biti točno napisana i njihovi potpisi moraju biti točni, inače se neće pozivat i unity će izbaciti pogrešku. \par
+Kolizijske funkcije (OnCollisionEnter, OnCollisionStay, OnCollisionExit) imaju potpis koji izgleda kao ispis \ref{potpisKolizije}. Ove metode se pozivaju kada se dva tijela koji imaju kruto tijelo ili sudarač, a sadrže informaciju o mjestu kontakta i brzini sudara.
+\begin{lstlisting}[caption={Potpis kolizijskih funkcija}, label=potpisKolizije]
+void OnCollisionEnter(Collision col);
+\end{lstlisting} \par
+Funkcije koje se pokreću na okidač (OnTriggerEnter, OnTriggerStay, OnTriggerExit) imaju kao ulazni parametar sudarač, pa je moguće više informacija saznati iz njega. Isto tako se pozivaju kada se dva tijela sudare, ako barem jedno tijelo ima svoj sudarač označen kao okidač. Potpis ove funkcije i primjer kako izgleda u igri se može vidjeti u ispisu \ref{primjerTrigger}
+\begin{lstlisting}[caption={Potpis i primjer trigger funkcije}, label=primjerTrigger]
+void OnTriggerEnter(Collider col) {
+	if (col.gameObject.layer == LayerMask.NameToLayer ("RoadMarkers"))
+		this.checkTheRightMarker (col.ToString ().Split (' ') [0]);
+}
+\end{lstlisting} \par
+Na slici \ref{fig:markeriPutanje} se mogu vidjeti posebni markeri koji su korišteni za provjeravanje da li je automobil prešao sve markere i je li išao pravim smjerom. Ovo su obični igrajući objekti sa sudaračima kojima je označeno da su okidači. Ako se sudaraču postavi da je okidač, onda će se kroz njega moći prolaziti. 
+\subsection{Generičke funkcije}
+Zbog jednostavnijeg načina dohvaćanja pojedinih komponenti igrajućih objekata postoje generičke funkcije. To su funkcije koje nije potrebno eksplicitno baciti u drugi tip, već prilikom dohvaćanja definiramo tip. Primjer se može vidjeti u ispisu \ref{generickeFunkcije}
+\begin{lstlisting}[caption={Primjer generičke funkcije}, label=generickeFunkcije]
+this.carBody = GetComponent<RigidBody>();
+\end{lstlisting}
