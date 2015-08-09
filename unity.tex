@@ -1,6 +1,31 @@
 \section{Unity}
+Glavno sučelje od unity-a se može vidjeti na slici \ref{fig:unitysucelje}. Raspored koji se može vidjeti je najoptimalniji za rad ukoliko programer ima samo jedan monitor. U slučaju da programer ima više monitora onda bi se mogao napraviti puno pregledniji raspored. 
+
+\subsection{Inspektor}
+Inspektor (\emph{eng. Inspector}) se koristi za provjeravanje pojedinih opcija komponenta igrajućih objekata (\emph{eng. GameObject}). Pomoću njega je moguće dodavati elemente i obavljati bilo koju operaciju, te vidjeti sve moguće stavke o objektu.
+
+\begin{figure}[h]
+	\includegraphics[width=12.5cm, height=10cm]{unitysucelje.png}
+	\centering
+	\caption{Unity sučelje}
+	\label{fig:unitysucelje}
+\end{figure}
+\newpage
+
+\subsection{Scena}
+Scena (\emph{eng. Scene}) se koristi prilikom izrade igre kako bi se moglo iz neutralne pozicije gledati cijeli svijet. Sve preinake koje se rade u svijetu kao što su dodavanje objekata, određivanje položaja, dimenzija se obavljaju unutar ovog dijela. U gornjem desnom kutu se može vidjeti maleni objekt koji je crvene, zelene i plave boje. On programeru govori trenutnu orijentaciju u svijetu. Zelena boja je y, crvena je x, a plava z koordinata.
+
+\subsection{Hijerarhija}
+Hijerarhija (\emph{eng. Hierarchy}) je dio u kojem se nalaze svi igrajući objekti koji su napravljeni. Ovdje je moguće vidjeti odnos svih igrajućih objekata. Pod odnos se misli na roditelj, dijete, gdje jedan igrajući objekt može biti dijete drugog. Na ovaj način je moguće iz roditelja pristupati djeci i njihovim komponentama. Iako unity pruža mogućnost i obrnutog procesa, ovo ugnježđivanje omogućuje jednu odličnu funkcionalnost koja se koristi u igri. Ako je kamera dijete nekog objekta koji se pokreće sa nekom silom, tada kamera prati kretenje tog igrajućeg objekta i dobiva se iluzija kao u 3D igricama gdje se glavni junak gleda iz trećeg lica. 
+
+\subsection{Projekt}
+Projekt (\emph{eng. Project})
+
+\subsection{Igra}
+dodat još teksta
+
 \subsection{Igrajući objekti}
-Svaki objekt koji se može vidjeti u unity-u je \textbf{igrajući objekt} (\emph{eng. GameObject}). Kada se napravi bilo koj objekt on treba imati svoju poziciju unutar svijeta. Kako bi se mogla znati njegova pozicija koristimo komponente. Svaki objekt mora imati svoju transformaciju (\emph{eng. Transform}). U suštini igrajući objekti su samo kontenjeri koji sadrže komponente.
+Svaki objekt koji se može vidjeti u unity-u je \textbf{igrajući objekt}. Kada se napravi bilo koj objekt on treba imati svoju poziciju unutar svijeta. Kako bi se mogla znati njegova pozicija koristimo komponente. Svaki objekt mora imati svoju transformaciju (\emph{eng. Transform}). U suštini igrajući objekti su samo kontenjeri koji sadrže komponente.
 
 \subsection{Kamera}
 Kamere se koriste za prikaz igre kako je programer zamislio. Koristeći više kamera moguće je napraviti različite efekte i animacije za igrača, te stvoriti jedinstveno iskustvo tijekom igranja igre. Kamere imaju dvije moguće projekcije (ortografijsku i perspektivnu). Ortografijska se koristi za 2D igrice ili ako nije bitna dubina u igricama. Najčešće su to neke platformske igre, puzzle ili slično. Perspektivna se koristi ako je želimo pokazati dubinu u igri. U igri se koristi ovaj oblik, te je postavljena kao dijete automobilskog igrajućeg objekta. Na ovaj način kamera slijedi automobil i dobiva se pravo iskustvo vožnje automobila.
@@ -61,6 +86,7 @@ Isto tako veoma bitna stvar je povećati masu modela, inače će početi nekontr
 
 \subsubsection{Rotiranje kotača}
 Prilikom vožnje automobila za bolju simulaciju potrebno je okretati i kola. Za isprogramirati ovu naizgled jednostavnu radnju više stvari treba unaprijed biti dobro definirano, inače se stvar komplicira. Ukoliko je igrajući objekt loše definiran i pivoti nisu dobro postavljeni na kotačima, zbog mehanike koju unity koristi objekti rotiraju krivo ili treba koristit naprednije metode koje povećavaju broj linija koda i stvaraju dodatne probleme. Rotacija kotača bi trebala biti oko njegove osi, te se zato mora postaviti pivot u sredinu kotača. Ovo se obavlja tijekom izrade samog modela, te treba paziti na to prije unosa u unity. Ako se pivot nije centrirao prilikom izrade, onda se treba obavljati popravljanje. Koraci za popravljanje:
+\newpage
 \begin{enumerate}
 	\item Pronaći objekt (kotač) unutar hijerarhije
 	\item Napraviti novi prazni objekt na istoj razini kao i kotač
@@ -74,6 +100,7 @@ for (int i = 0; i < 4; i++)
 			    this.speed * move * Time.deltaTime
 			);	
 \end{lstlisting}
+\newpage
 \subsubsection{Problemi u zavojima}
 Prilikom vožnje vozila dodavanjem samo kolnih sudarača ne bismo dobili potpunu imitaciju pravog vozila. Jedan od problema koji se javlja je preokretanje u zavojima. Ova pojava je sasvim opravdana i nije nikakva greška programa. Što se ustvari događa? Kada vozilo uđe u zavoj i započme skretanje, na njega djeluje centrifugalna sila, podigne se prednji kotač sa tla i kako ne postoji protusila preokrene se. \par
 Za ovaj slučaj postoji više rješenja, a onaj koji se koristi u igrici je sljedeći. Pri skretanju se provjeri koji kotač se podiže od tla i na njega se primjeni sila koja djeluje u smjeru gravitacije. Na ovaj način se smanji utjecaj centrifugalne sile, te samim time teže preokrenuti vozilo.

@@ -1,0 +1,24 @@
+\section{Zvuk}
+Teško je danas zamisliti igru bez ikakvih zvukova osim ako ciljano nije dizajnirana na taj način. U stvarnom svijetu svaka osoba različito čuje određene zvukove. Stariji ljudi ne čuju više frekvencije kao i mladi, osoba koja sluša glazbu preko računala na udaljenosti neće isto čuti kao i osoba koja stoji odmah do računala. Svi ovi faktori su imitirani unutar unity-a. Posebne metode provjeravanja pojedinih izvora zvuka, te ambijenta u kojem se nalazi omogućuju da igrač drugačije zvuk ovisno o svojoj poziciji. Formate koje unity podržava je moguće vidjeti u tablici \ref{table:tablicaFormata}.
+
+\begin{table}[h]
+\large
+\begin{tabular}{ l | r } \hline	
+	Format & Extensions \\
+	\hline MPEG layer 3 & .mp3 \\
+	\hline Ogg Vorbis  & .ogg \\
+	\hline Microsoft Wave  & .wav \\
+	\hline Audio Interchange File Format & .aiff / .aif \\
+	\hline Ultimate Soundtracker module  & .mod \\
+	\hline Impulse Tracker module  & .it \\
+	\hline Scream Tracker module & .s3m \\
+	\hline FastTracker 2 module  & .xm \\
+\end{tabular}
+	\label{table:tablicaFormata}
+	\caption{Tablica formata}
+\end{table}
+
+Od unity verzije 5.0 unutar unity-a sami zvuk i zvukovna datoteka su odvojeno pohranjene. Zvuku se može pristupati preko skripti korištenjem komponente \emph{Audio Clip}, koju je onda moguće odsvirat. Jedna od najćešćih grešaka prilikom dodavanja zvukova je ostavljanje sviranja na početku (\emph{eng. play on awake}). Ako se ova opcija ne ugasi onda će se prilikom pokretanja igre početi svirati svi zvukovi kojima nije ovo isključeno. Na mobilnim uređajima audio komponente su komprimirane u mp3 format zbog bržeg načina dekompresije. Znimljiva komponenta je zvukovni osluškivač (\emph{eng. Audio Listener})koji se koristi za snimanje zvukova unutar unity-a.
+\newpage
+\subsection{Zvukovni osluškivač}
+Ova komponenta omogućava igračima pružiti iskustvo kao da su doista oni na pozicijama igrajućih objekata. Kroz ovu igru nije bilo potrebe za korištenje ove komponente jer svi zvukovi koji se proizvode tokom igre su globalni i nema potrebe za posebnim načinom osluškivanja.
