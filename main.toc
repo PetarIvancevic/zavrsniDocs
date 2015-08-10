@@ -36,5 +36,5 @@
 \contentsline {subsection}{\numberline {5.2}Glavni izbornik}{23}
 \contentsline {subsection}{\numberline {5.3}Ostali elementi}{24}
 \contentsline {section}{\numberline {6}Zvuk}{25}
-\contentsline {subsection}{\numberline {6.1}Zvukovni oslu\IeC {\v s}kiva\IeC {\v c}}{26}
+\contentsline {subsection}{\numberline {6.1}Zvu\IeC {\v c}ni oslu\IeC {\v s}kiva\IeC {\v c}}{26}
 \contentsline {section}{\numberline {7}Literatura}{27}
