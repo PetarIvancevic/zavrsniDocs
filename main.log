@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  11 AUG 2015 13:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  12 AUG 2015 00:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -322,8 +322,8 @@ File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
 ) (./main.aux (./pocetna_title.aux) (./pocetna_broj_dva.aux) (./summary.aux) (.
 /uvod.aux)
 (./koristene_tehnologije.aux) (./Unity.aux) (./skriptiranje.aux)
-(./korisnicko_sucelje.aux) (./zvukovi.aux) (./opis_klasa.aux) (./literatura.aux
-))
+(./korisnicko_sucelje.aux) (./zvukovi.aux) (./opis_klasa.aux) (./zakljucak.aux)
+(./literatura.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
@@ -338,7 +338,8 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
 LaTeX Font Info:    ... okay on input line 22.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
 LaTeX Font Info:    ... okay on input line 22.
- (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
+
+(/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count97
 \scratchdimen=\dimen110
@@ -456,14 +457,19 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 ]
 \openout2 = `uvod.aux'.
 
- (./uvod.tex) [6
+ (./uvod.tex
+Overfull \hbox (4.27368pt too wide) in paragraph at lines 6--6
+[]\OT1/cmr/m/n/12 Tre^^Sce po-glav-lje de-talj-nije opi-suje unity, od os-nov-n
+ih kom-po-nenti, do na^^Tcina
+ []
+
+) [6
 
 
 ]
 \openout2 = `koristene_tehnologije.aux'.
 
-
-(./koristene_tehnologije.tex) [7
+ (./koristene_tehnologije.tex) [7
 
 
 ]
@@ -582,6 +588,12 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 
 ] [28]) [29]
+\openout2 = `zakljucak.aux'.
+
+ (./zakljucak.tex) [30
+
+
+]
 \openout2 = `literatura.aux'.
 
  (./literatura.tex
@@ -590,23 +602,23 @@ Overfull \hbox (13.6083pt too wide) in paragraph at lines 5--6
 l-stable-
  []
 
-) [30
+) [31
 
 
 ] (./main.aux (./pocetna_title.aux) (./pocetna_broj_dva.aux)
 (./summary.aux) (./uvod.aux) (./koristene_tehnologije.aux) (./Unity.aux)
 (./skriptiranje.aux) (./korisnicko_sucelje.aux) (./zvukovi.aux)
-(./opis_klasa.aux) (./literatura.aux))
+(./opis_klasa.aux) (./zakljucak.aux) (./literatura.aux))
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.28pt have occurred.
 
  ) 
 Here is how much of TeX's memory you used:
- 4184 strings out of 493089
- 56930 string characters out of 6134842
+ 4192 strings out of 493089
+ 57035 string characters out of 6134842
  138737 words of memory out of 5000000
- 7530 multiletter control sequences out of 15000+600000
+ 7531 multiletter control sequences out of 15000+600000
  10708 words of font info for 38 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,7n,58p,936b,1188s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -617,10 +629,10 @@ ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
 ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texliv
 e/2015/texmf-dist/fonts/type1/urw/courier/ucrb8a.pfb></usr/local/texlive/2015/t
 exmf-dist/fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on main.pdf (30 pages, 3495771 bytes).
+Output written on main.pdf (31 pages, 3499017 bytes).
 PDF statistics:
- 137 PDF objects out of 1000 (max. 8388607)
- 87 compressed objects within 1 object stream
+ 141 PDF objects out of 1000 (max. 8388607)
+ 90 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
