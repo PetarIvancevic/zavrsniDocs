@@ -1,0 +1,52 @@
+\section{Klase}
+Svaka klasa koja se definira nalazi se unutar svoje zasebne skripte. Moguće je nasljeđivanje iako u ovoj igri nije bilo potrebe. Primjer klase B koja nasljeđuje klasu A je moguće vidjeti u ispisu \ref{primjernasljedivanja}. Potrebno je napomenuti da klase koje nasljeđuju \emph{MonoBehavior} ne smiju imati svoje konstruktore, ali klase koje ne nasljeđuju \emph{MonoBehavior} moraju imati svoj konstruktor. 
+\begin{lstlisting}[caption={Primjer nasljeđivanja}, label=primjernasljedivanja]
+using UnityEngine;
+using System.Collections;
+
+public class B : A {
+	public B (string carType)  {
+	
+	}	
+}
+\end{lstlisting}
+Ukoliko klasa nasljeđuje već nasljeđenu klasu onda je moguće definirati isto ulazne parametre za baznu klasu preko ključne riječi \emph{base}. Primjer korištenja ove naredbe se može vidjeti u ispisu \ref{nasljedivanjedva}. Klasa C nasljeđuje gore definiranu klasu B i prosljeđuje joj ulazni argument tipa string ( "mazda" ). Ako se ne definira ulazni argument onda će se pozvati predefinirani konstruktor koji ne prima nijedan argument.
+
+\begin{lstlisting}[caption={Primjer nasljeđivanja nasljeđene klase}, label=nasljedivanjedva]
+using UnityEngine;
+using System.Collections;
+
+public class C : B {
+	public C () : base("mazda") {
+	
+	}	
+}
+\end{lstlisting}
+
+Kako trenutna igra nije toliko složena ne treba joj previše klasa. Sve klase koje su korištene unutar igre, kao i njihov opis je moguće vidjeti ispod. Svaka klasa je navedena kao i igrajući objekt kojem je pridružena, a detaljan opis se nalazi u podpoglavljima pojedine klase.
+\newpage
+
+\subsection{Klasa CarMovement}
+Glavna skripta koja se koristi za praćenje trenutnog kruga, koliko je bodova igrač skupio i kretanje. Podatkovni članovi su:
+\begin{itemize}
+	\item (private float) thrustTorque - broj koji definira moment motora
+	\item (public float) speed - varijabla koja definira brzinu automobila
+	\item (private RigidBody) carBody - varijabla koja sadrži kruto tijelo automobila
+	\item (private bool[]) markersPassed - pomoćni niz boolean varijabli za provjeru markera jesu li prođeni ili ne
+	\item (private int) lapsPassed - trenutni krug u kojem se igrač nalazi
+	\item (private Vector3) lastPos - zadnja pozicija automobila koja sadrzi (x, y, z) koordinate
+	\item (private int) points - bodovi igrača
+	\item (public Text) victoryText - referenca na tekst koji pokazuje, ako je korisnik pobjedio
+	\item (public Text) lapText - referenca na tekst trenutnog kruga
+	\item (public Text) pointsText - referenca na tekst bodova 
+	\item (private string[]) tireNames - pomoćni niz koji se koristi za dohvaćanje referenci kola
+	\item (private string[]) tirePivotNames - pomoćni niz koji se koristi za dohvaćanje pivota kotača
+	\item (private string[]) wheelColliderNames - pomoćni niz koji se koristi za dohvaćanje kolnih sudarača
+	\item (private WheelCollider[]) wheelColliders - reference na kolne sudarače
+	\item (private GameObject[]) steerWheels - reference na dva kotača koja se zakreću prilikom skretanja
+	\item (public float) antiRoll - sila koja se dodaje da se ne okrene automobil
+	\item (private GameObject[]) tires - reference na kotače
+	\item (private GameObject[]) tirePivots - reference na pivote kotača
+	\item (private GameObject[]) collectableBoxes - reference na kutije koj se skupljaju tokom igranja
+	\item (private AudioSource) collectSound - referenca na zvuk koji se čuje kada se skupi kutija
+\end{itemize}

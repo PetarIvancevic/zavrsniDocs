@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  10 AUG 2015 02:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  11 AUG 2015 13:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -322,7 +322,8 @@ File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
 ) (./main.aux (./pocetna_title.aux) (./pocetna_broj_dva.aux) (./summary.aux) (.
 /uvod.aux)
 (./koristene_tehnologije.aux) (./Unity.aux) (./skriptiranje.aux)
-(./korisnicko_sucelje.aux) (./zvukovi.aux) (./literatura.aux))
+(./korisnicko_sucelje.aux) (./zvukovi.aux) (./opis_klasa.aux) (./literatura.aux
+))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
@@ -337,8 +338,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
 LaTeX Font Info:    ... okay on input line 22.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
 LaTeX Font Info:    ... okay on input line 22.
-
-(/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
+ (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count97
 \scratchdimen=\dimen110
@@ -480,44 +480,45 @@ Package pdftex.def Info: gotoveSlike/unitysucelje.png used on input line 8.
 
 
  <./gotoveSlike/unitysucelje.png>]
-[9] [10]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 41.
+[9] [10] [11]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 48.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 41.
- [11]
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 48.
+
 [12]
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 59.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 67.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
 LaTeX Font Info:    Font shape `OT1/pcr/bx/n' in size <10> not available
-(Font)              Font shape `OT1/pcr/b/n' tried instead on input line 60.
+(Font)              Font shape `OT1/pcr/b/n' tried instead on input line 68.
 
 <gotoveSlike/igrajuci_objekt.png, id=47, 1284.8pt x 803.0pt>
 File: gotoveSlike/igrajuci_objekt.png Graphic file (type png)
 
 <use gotoveSlike/igrajuci_objekt.png>
-Package pdftex.def Info: gotoveSlike/igrajuci_objekt.png used on input line 67.
+Package pdftex.def Info: gotoveSlike/igrajuci_objekt.png used on input line 75.
 
 (pdftex.def)             Requested size: 355.64423pt x 284.534pt.
- [13 <./gotoveSlike/igrajuci_objekt.png>]
-<gotoveSlike/wheels.jpg, id=55, 1084.05pt x 602.25pt>
-File: gotoveSlike/wheels.jpg Graphic file (type jpg)
-
-<use gotoveSlike/wheels.jpg>
-Package pdftex.def Info: gotoveSlike/wheels.jpg used on input line 81.
-(pdftex.def)             Requested size: 355.65341pt x 199.16583pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[14] [15 <./gotoveSlike/wheels.jpg>]) [16]
+[13] [14 <./gotoveSlike/igrajuci_objekt.png>]
+<gotoveSlike/wheels.jpg, id=58, 1084.05pt x 602.25pt>
+File: gotoveSlike/wheels.jpg Graphic file (type jpg)
+
+<use gotoveSlike/wheels.jpg>
+Package pdftex.def Info: gotoveSlike/wheels.jpg used on input line 89.
+(pdftex.def)             Requested size: 355.65341pt x 199.16583pt.
+ [15 <./gotoveSlike/wheels.jpg>]) [16]
 \openout2 = `skriptiranje.aux'.
 
- (./skriptiranje.tex [17
+
+(./skriptiranje.tex [17
 
 
 ] [18]
@@ -574,32 +575,38 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 
 ]) [26]
+\openout2 = `opis_klasa.aux'.
+
+
+(./opis_klasa.tex [27
+
+
+] [28]) [29]
 \openout2 = `literatura.aux'.
 
-
-(./literatura.tex
+ (./literatura.tex
 Overfull \hbox (13.6083pt too wide) in paragraph at lines 5--6
 []\OT1/cmr/m/n/12 http://forum.unity3d.com/threads/how-to-make-a-physically-rea
 l-stable-
  []
 
-) [27
+) [30
 
 
 ] (./main.aux (./pocetna_title.aux) (./pocetna_broj_dva.aux)
 (./summary.aux) (./uvod.aux) (./koristene_tehnologije.aux) (./Unity.aux)
 (./skriptiranje.aux) (./korisnicko_sucelje.aux) (./zvukovi.aux)
-(./literatura.aux))
+(./opis_klasa.aux) (./literatura.aux))
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.28pt have occurred.
 
  ) 
 Here is how much of TeX's memory you used:
- 4162 strings out of 493089
- 56677 string characters out of 6134842
- 137737 words of memory out of 5000000
- 7515 multiletter control sequences out of 15000+600000
+ 4184 strings out of 493089
+ 56930 string characters out of 6134842
+ 138737 words of memory out of 5000000
+ 7530 multiletter control sequences out of 15000+600000
  10708 words of font info for 38 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,7n,58p,936b,1188s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -610,10 +617,10 @@ ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
 ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texliv
 e/2015/texmf-dist/fonts/type1/urw/courier/ucrb8a.pfb></usr/local/texlive/2015/t
 exmf-dist/fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on main.pdf (27 pages, 3488425 bytes).
+Output written on main.pdf (30 pages, 3495771 bytes).
 PDF statistics:
- 128 PDF objects out of 1000 (max. 8388607)
- 81 compressed objects within 1 object stream
+ 137 PDF objects out of 1000 (max. 8388607)
+ 87 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
