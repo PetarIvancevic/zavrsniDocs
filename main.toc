@@ -42,5 +42,8 @@
 \contentsline {subsection}{\numberline {6.2}Postavke}{26}
 \contentsline {section}{\numberline {7}Klase}{27}
 \contentsline {subsection}{\numberline {7.1}Klasa CarMovement}{28}
-\contentsline {section}{\numberline {8}Zaklju\IeC {\v c}ak}{30}
-\contentsline {section}{\numberline {9}Literatura}{31}
+\contentsline {subsection}{\numberline {7.2}Klasa MenuController}{31}
+\contentsline {subsection}{\numberline {7.3}Klasa SoundEffects}{32}
+\contentsline {subsection}{\numberline {7.4}Klasa RotateBoxes}{33}
+\contentsline {section}{\numberline {8}Zaklju\IeC {\v c}ak}{34}
+\contentsline {section}{\numberline {9}Literatura}{35}

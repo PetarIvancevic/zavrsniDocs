@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  12 AUG 2015 00:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  13 AUG 2015 13:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -587,10 +587,34 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (./opis_klasa.tex [27
 
 
-] [28]) [29]
+]
+Overfull \hbox (1.5626pt too wide) in paragraph at lines 34--35
+[]\OT1/cmr/m/n/12 (private void) Ro-ta-teT-he-Ti-res(float mo-ve-ment) - pomo^^
+Scna funk-cija koja
+ []
+
+
+Overfull \hbox (9.03891pt too wide) in paragraph at lines 37--38
+[]\OT1/cmr/m/n/12 (private void) up-da-te-Texts() - funk-cija za mi-je-nja-nje 
+tek-sta u ko-risni^^Tckom
+ []
+
+[28] [29] [30]
+Overfull \hbox (6.7076pt too wide) in paragraph at lines 72--73
+\OT1/cmr/m/n/12 Skripta je pri-dru^^Tzena igraju^^Scem objektu \OT1/cmr/m/it/12
+ Menu \OT1/cmr/m/n/12 koja ima pris-tup svim igraju^^Scim
+ []
+
+
+Overfull \hbox (8.64308pt too wide) in paragraph at lines 82--83
+[]\OT1/cmr/m/n/12 (private Ca-nvas) Menu - sadr^^Tzi re-fe-rencu na kom-po-nent
+u platna igraju^^Sceg
+ []
+
+[31] [32]) [33]
 \openout2 = `zakljucak.aux'.
 
- (./zakljucak.tex) [30
+ (./zakljucak.tex) [34
 
 
 ]
@@ -602,7 +626,7 @@ Overfull \hbox (13.6083pt too wide) in paragraph at lines 5--6
 l-stable-
  []
 
-) [31
+) [35
 
 
 ] (./main.aux (./pocetna_title.aux) (./pocetna_broj_dva.aux)
@@ -629,10 +653,10 @@ ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
 ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texliv
 e/2015/texmf-dist/fonts/type1/urw/courier/ucrb8a.pfb></usr/local/texlive/2015/t
 exmf-dist/fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on main.pdf (31 pages, 3499017 bytes).
+Output written on main.pdf (35 pages, 3509057 bytes).
 PDF statistics:
- 141 PDF objects out of 1000 (max. 8388607)
- 90 compressed objects within 1 object stream
+ 153 PDF objects out of 1000 (max. 8388607)
+ 98 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
