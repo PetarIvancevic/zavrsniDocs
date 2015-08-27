@@ -12,16 +12,16 @@
 \contentsline {subsubsection}{\numberline {3.1.5}Igra}{9}{subsubsection.3.1.5}
 \contentsline {subsubsection}{\numberline {3.1.6}Konzola}{10}{subsubsection.3.1.6}
 \contentsline {subsubsection}{\numberline {3.1.7}Trgovina}{10}{subsubsection.3.1.7}
-\contentsline {subsection}{\numberline {3.2}Igraju\IeC {\'c}i objekti}{10}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Kamera}{10}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.2}Igraju\IeC {\'c}i objekti}{11}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Kamera}{11}{subsection.3.3}
 \contentsline {subsection}{\numberline {3.4}Svijetlo}{11}{subsection.3.4}
-\contentsline {subsection}{\numberline {3.5}Monta\IeC {\v z}ni objekti}{11}{subsection.3.5}
-\contentsline {subsection}{\numberline {3.6}Komponente}{11}{subsection.3.6}
-\contentsline {subsubsection}{\numberline {3.6.1}Transformacija}{12}{subsubsection.3.6.1}
-\contentsline {subsubsection}{\numberline {3.6.2}Kruta tijela}{12}{subsubsection.3.6.2}
-\contentsline {subsubsection}{\numberline {3.6.3}Sudara\IeC {\v c}i}{12}{subsubsection.3.6.3}
+\contentsline {subsection}{\numberline {3.5}Monta\IeC {\v z}ni objekti}{12}{subsection.3.5}
+\contentsline {subsection}{\numberline {3.6}Komponente}{12}{subsection.3.6}
+\contentsline {subsubsection}{\numberline {3.6.1}Kruta tijela}{12}{subsubsection.3.6.1}
+\contentsline {subsubsection}{\numberline {3.6.2}Sudara\IeC {\v c}i}{13}{subsubsection.3.6.2}
+\contentsline {subsubsection}{\numberline {3.6.3}Transformacija}{15}{subsubsection.3.6.3}
 \contentsline {subsection}{\numberline {3.7}Kota\IeC {\v c}i}{15}{subsection.3.7}
-\contentsline {subsubsection}{\numberline {3.7.1}Rotiranje kota\IeC {\v c}a}{15}{subsubsection.3.7.1}
+\contentsline {subsubsection}{\numberline {3.7.1}Rotiranje kota\IeC {\v c}a}{16}{subsubsection.3.7.1}
 \contentsline {subsubsection}{\numberline {3.7.2}Problemi u zavojima}{16}{subsubsection.3.7.2}
 \contentsline {section}{\numberline {4}Skriptiranje}{17}{section.4}
 \contentsline {subsection}{\numberline {4.1}Izrada i kori\IeC {\v s}tenje skripti}{17}{subsection.4.1}

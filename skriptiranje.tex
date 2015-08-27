@@ -1,7 +1,7 @@
 \section{Skriptiranje}
-Skriptiranje (\emph{eng. scripting}) je jedan od osnovnih dijelova svaki igre jer svaku igru je potrebno definirati određena pravila, te nekakav mehanizam koji će motriti sve igrajuće objekte i provjeravati da li se drže tih pravila. Skripte isto tako omogućavaju stvaranje grafičkih efekata korištenjem ugrađenih metoda ili mijenjanje same fizike igre tokom igranja.
+Skriptiranje (\emph{eng.~scripting}) je jedan od osnovnih dijelova svaki igre jer svaku igru je potrebno definirati određena pravila, te nekakav mehanizam koji će motriti sve igrajuće objekte i provjeravati da li se drže tih pravila. Skripte isto tako omogućavaju stvaranje grafičkih efekata korištenjem ugrađenih metoda ili mijenjanje same fizike igre tokom igranja.
 \subsection{Izrada i korištenje skripti}
-Izrada skripti se može na više načina. Najjednostvniji način je preko botuna za dodavanje komponenti igrajućem objektu, te odabirom nova skripta (\emph{eng. new script}). Na ovaj način istovremeno se napravi skripta i pridruži igrajućem objektu. Kako je već navedno unity dopušta pisanje skripti u dva jezika:
+Izrada skripti se može na više načina. Najjednostvniji način je preko botuna za dodavanje komponenti igrajućem objektu, te odabirom nova skripta (\emph{eng.~new script}). Na ovaj način istovremeno se napravi skripta i pridruži igrajućem objektu. Kako je već navedno unity dopušta pisanje skripti u dva jezika:
 \begin{itemize} 
 	\item C\# - industrijski standard, jezik koji je veoma sličan Javi ili C++
 	\item Unityscript - jezik baziran na Javascriptu
@@ -25,7 +25,7 @@ public class MainPlayer : MonoBehaviour {
 }
 \end{lstlisting}
 Start metoda se koristi za incijalizaciju varijabli prilikom pokretanja programa. Ova metoda \textbf{nije konstruktor}, već unity preuzima odgovornost za sve konstruktore. Velika greška bi bila definiranje specijalnih konstruktora i vrlo vjerojatno ne bi ništa radilo. \par
-Druga metoda koja je generirana se pokreće za broj slika u sekundi (\emph{eng. frame per second fps}). Zanimljivo je da postoje tri varijacije ove metode.
+Druga metoda koja je generirana se pokreće za broj slika u sekundi (\emph{eng.~frame per second fps}). Zanimljivo je da postoje tri varijacije ove metode.
 \begin{itemize} 
 	\item Update
 	\item FixedUpdate - koji bi se trebao koristiti, ukoliko igrajući objekt sadrži kruto tijelo
@@ -41,11 +41,11 @@ for (int i = 0; i < 4; i++) {
 }
 \end{lstlisting}
 \subsection{Funkcije događaja}
-Skripte u unity-u nisu kao u drugim programskim jezicima da se vrte u beskonačnoj petlji dok ne završe dani zadatak. Unity funkcionira tako da prebacuje kontrolu funkcijama koje se trebaju izvršiti, koje nakon izvršavanja vrate kontrolu natrag unity-u. Ovakve funkcije se zovu funkcije događaja (\emph{eng. Event functions}). Neke od najučestalijih koje se koriste su:
+Skripte u unity-u nisu kao u drugim programskim jezicima da se vrte u beskonačnoj petlji dok ne završe dani zadatak. Unity funkcionira tako da prebacuje kontrolu funkcijama koje se trebaju izvršiti, koje nakon izvršavanja vrate kontrolu natrag unity-u. Ovakve funkcije se zovu funkcije događaja (\emph{eng.~Event functions}). Neke od najučestalijih koje se koriste su:
 \begin{itemize} 
-	\item Regularna ažuriranja događaja (\emph{eng. Regular update events}) - sve funkcije koje se pokreću za animiranje ili manipuliranje likovima (Update, LateUpdate, FixedUpdate)
-	\item Inicijalizacijski događaji (\emph{eng. Initialization Events}) - funkcije koje se pokreću na početku pokretanja unity-a. Spomenuta je Start, ali postoji i buđenje (\emph{Awake}). Awake se poziva za svaki igrajući objekt prije nego što se scena napravi. (Awake se pokreće prije Start)
-	\item Fizički događaji (\emph{eng. Physics Events}) - sve funkcije koje se pokreću kada se dogodi kolizija igrajućih objekata
+	\item Regularna ažuriranja događaja (\emph{eng.~Regular update events}) - sve funkcije koje se pokreću za animiranje ili manipuliranje likovima (Update, LateUpdate, FixedUpdate)
+	\item Inicijalizacijski događaji (\emph{eng.~Initialization Events}) - funkcije koje se pokreću na početku pokretanja unity-a. Spomenuta je Start, ali postoji i buđenje (\emph{Awake}). Awake se poziva za svaki igrajući objekt prije nego što se scena napravi. (Awake se pokreće prije Start)
+	\item Fizički događaji (\emph{eng.~Physics Events}) - sve funkcije koje se pokreću kada se dogodi kolizija igrajućih objekata
 \end{itemize}
 \begin{figure}[h]
 	\includegraphics[width=12.5cm, height=8cm]{roadMarkers.png}
@@ -54,7 +54,7 @@ Skripte u unity-u nisu kao u drugim programskim jezicima da se vrte u beskonačn
 	\label{fig:markeriPutanje}
 \end{figure}
 \subsubsection{Razlike fizičkih funkcija događaja}
-Unity razlikuje dva različita tipa ovih funkcija. One koje se pozivaju prilikom kontakta sa igrajućim objektom i one koje imaju na sudaračima označeno da je okidač (\emph{eng. Trigger}). Svaka od ovih prima parametar, a isto tako se razlikuju i po tome. Imena funkcija moraju biti točno napisana i njihovi potpisi moraju biti točni, inače se neće pozivat i unity će izbaciti pogrešku. \par
+Unity razlikuje dva različita tipa ovih funkcija. One koje se pozivaju prilikom kontakta sa igrajućim objektom i one koje imaju na sudaračima označeno da je okidač (\emph{eng.~Trigger}). Svaka od ovih prima parametar, a isto tako se razlikuju i po tome. Imena funkcija moraju biti točno napisana i njihovi potpisi moraju biti točni, inače se neće pozivat i unity će izbaciti pogrešku. \par
 Kolizijske funkcije (OnCollisionEnter, OnCollisionStay, OnCollisionExit) imaju potpis koji izgleda kao ispis \ref{potpisKolizije}. Ove metode se pozivaju kada se dva tijela koji imaju kruto tijelo ili sudarač, a sadrže informaciju o mjestu kontakta i brzini sudara.
 \begin{lstlisting}[caption={Potpis kolizijskih funkcija}, label=potpisKolizije]
 void OnCollisionEnter(Collision col);
