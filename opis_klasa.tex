@@ -10,7 +10,7 @@ public class B : A {
 	}	
 }
 \end{lstlisting}
-Ukoliko klasa nasljeđuje već nasljeđenu klasu onda je moguće definirati isto ulazne parametre za baznu klasu preko ključne riječi \emph{base}. Primjer korištenja ove naredbe se može vidjeti u ispisu \ref{nasljedivanjedva}. Klasa C nasljeđuje gore definiranu klasu B i prosljeđuje joj ulazni argument tipa string ( "mazda" ). Ako se ne definira ulazni argument onda će se pozvati predefinirani konstruktor koji ne prima nijedan argument.
+Ukoliko klasa nasljeđuje već nasljeđenu klasu onda je moguće definirati isto ulazne parametre za baznu klasu preko ključne riječi \emph{base}. Primjer korištenja ove naredbe se može vidjeti u ispisu \ref{nasljedivanjedva}. Klasa C nasljeđuje gore definiranu klasu B i prosljeđuje joj ulazni argument tipa string "mazda". Ako se ne definira ulazni argument onda će se pozvati predefinirani konstruktor koji ne prima nijedan argument.
 
 \begin{lstlisting}[caption={Primjer nasljeđivanja nasljeđene klase}, label=nasljedivanjedva]
 using UnityEngine;
@@ -27,82 +27,82 @@ Kako trenutna igra nije toliko složena ne treba joj previše klasa. Sve klase k
 \newpage
 
 \subsection{Klasa CarMovement}
-Glavna klasa koja se koristi za praćenje trenutnog kruga, koliko je bodova igrač skupio i kretanje. Pridružena je igrajućem objektu \emph{PlayerHolder}, koji kao svoju djecu ima sve igrajuće objekte vezane uz vozilo. Kada se pokrene igra pozove se \emph{Start()} funkcija koja dohvaća sve reference potrebne za pokretanje vozila, mijenjanje teksta i provjeravanje trenutnog kruga. Svakom promjenom slike se poziva \emph{FixedUpdate()}, gdje se provjerava svaki unos od igrača i pozivaju druge privatne funkcije. Funkcije koje se koriste:
+Glavna klasa koja se koristi za praćenje trenutnog kruga, koliko je bodova igrač skupio i kretanje. Pridružena je igrajućem objektu \texttt{PlayerHolder}, koji kao svoju djecu ima sve igrajuće objekte vezane uz vozilo. Kada se pokrene igra pozove se \texttt{Start()} funkcija koja dohvaća sve reference potrebne za pokretanje vozila, mijenjanje teksta i provjeravanje trenutnog kruga. Svakom promjenom slike se poziva \texttt{FixedUpdate()}, gdje se provjerava svaki unos od igrača i pozivaju druge privatne funkcije. Funkcije koje se koriste:
 \begin{itemize}
-	\item (public void) Start() - sve reference se inicijaliziraju, prilikom pokretanja skripte
-	\item (public void) MoveCar(float steer) - pokretanje vozila se izvršava pozivajući ovu funkciju. Ovisno o predznaku varijable \emph{steer} će se vozilo kretati naprijed ili natrag
-	\item (private void) RotateTheTires(float movement) - pomoćna funkcija koja okreće kotače. Ovo okretanje kotača nije povezano sa funkcionalnošću kretanja, već je samo zbog izgleda
-	\item (private void) ApplyBrake() - funkcija koja zakoči vozilo
-	\item (private void) centripetalForce() - pomoćna funkcija koja ne dopušta vozilu da se preokrene u zavojima. Ukoliko se jedan kotač podigne s tla, onda ova sila djeluje na taj kotač određenom silom kako se ne bi prevrnio
-	\item (private void) updateTexts() - funkcija za mijenjanje teksta u korisničkom sučelju i za aktivaciju kutija pri prolasku kruga
-	\item (private void) SteerCar(float steer) - pomoćna funkcija za skretanje vozila lijevo i desno. Ovisno o predznaku varijable \emph{steer} će vozilo skretati u određenu stranu
-	\item (private void) resetMarkers() - funkcija za resetiranje markera, koji se koriste za provjeravanje na koji način je igrač došao do cilja. Ovo se radi zbog novog kruga, inače bi igrač mogao proći samo jednom krug i stajat na istoj lokaciji dok mu ne dođe poruka da je pobjedio
-	\item (private void) checkIfLap() - funkcija koja provjerava sve markere i provjeri da li je igrač prošao cijeli krug
-	\item (private void) checkTheRightMarker(string marker) - ova funkcija postavi marker koji je igrač prošao na istinitu vrijednost, a zna točno koji treba jer se proslijedi iz \emph{OnTriggerEnter()} funkcije
-	\item (private void) activateTheBoxes() - pomoćna funkcija koja prošeta po nizu kutija i aktivira svaku od njih
-	\item (private void) collectBox(GameObject go) - kada igrač prođe kroz jednu od kutija se pozove \emph{OnTriggerEnter()} i preko nje se proslijedi prava kutija koja je skupljena. Ova funkcija samo ugasi taj igrajući objekt i promijeni bodove korisnika
-	\item (void) OnTriggerEnter(Collider col) - funkcija događaja koja čeka za pozivanje već navedenih funkcija i prosljeđivanje pravih varijabli.
-	\item (void) FixedUpdate() - funkcija koja se poziva za svaku sliku i provjerava da li je korisnik pritisnuo određene tipke za kretanje, skretanje ili kočenje
+	\item \texttt{public void Start()} - sve reference se inicijaliziraju, prilikom pokretanja skripte
+	\item \texttt{public void) MoveCar (float steer)} - pokretanje vozila se izvršava pozivajući ovu funkciju. Ovisno o predznaku varijable \emph{steer} će se vozilo kretati naprijed ili natrag
+	\item \texttt{private void RotateTheTires (float movement)} - pomoćna funkcija koja okreće kotače. Ovo okretanje kotača nije povezano sa funkcionalnošću kretanja, već je samo zbog izgleda
+	\item \texttt{private void ApplyBrake()} - funkcija koja zakoči vozilo
+	\item \texttt{private void centripetalForce()} - pomoćna funkcija koja ne dopušta vozilu da se preokrene u zavojima. Ukoliko se jedan kotač podigne s tla, onda ova sila djeluje na taj kotač određenom silom kako se ne bi prevrnio
+	\item \texttt{private void updateTexts()} - funkcija za mijenjanje teksta u korisničkom sučelju i za aktivaciju kutija pri prolasku kruga
+	\item \texttt{private void SteerCar (float steer)} - pomoćna funkcija za skretanje vozila lijevo i desno. Ovisno o predznaku varijable \emph{steer} će vozilo skretati u određenu stranu
+	\item \texttt{private void resetMarkers()} - funkcija za resetiranje markera, koji se koriste za provjeravanje na koji način je igrač došao do cilja. Ovo se radi zbog novog kruga, inače bi igrač mogao proći samo jednom krug i stajat na istoj lokaciji dok mu ne dođe poruka da je pobjedio
+	\item \texttt{private void checkIfLap()} - funkcija koja provjerava sve markere i provjeri da li je igrač prošao cijeli krug
+	\item \texttt{private void checkTheRightMarker (string marker)} - ova funkcija postavi marker koji je igrač prošao na istinitu vrijednost, a zna točno koji treba jer se proslijedi iz \texttt{OnTriggerEnter()} funkcije
+	\item \texttt{private void activateTheBoxes()} - pomoćna funkcija koja prošeta po nizu kutija i aktivira svaku od njih
+	\item \texttt{private void collectBox (GameObject go)} - kada igrač prođe kroz jednu od kutija se pozove \texttt{OnTriggerEnter()} i preko nje se proslijedi prava kutija koja je skupljena. Ova funkcija samo ugasi taj igrajući objekt i promijeni bodove korisnika
+	\item \texttt{void OnTriggerEnter (Collider col)} - funkcija događaja koja čeka za pozivanje već navedenih funkcija i prosljeđivanje pravih varijabli.
+	\item \texttt{void FixedUpdate()} - funkcija koja se poziva za svaku sliku i provjerava da li je korisnik pritisnuo određene tipke za kretanje, skretanje ili kočenje
 \end{itemize}
 Reference se sve nalaze unutar privatnih ili javnih varijabli, koje se zovu podatkovni članovi. Ti članovi su:
 \begin{itemize}
-	\item (private float) thrustTorque - broj koji definira moment motora
-	\item (public float) speed - varijabla koja definira brzinu automobila
-	\item (private RigidBody) carBody - varijabla koja sadrži kruto tijelo automobila
-	\item (private bool[]) markersPassed - pomoćni niz boolean varijabli za provjeru markera jesu li prođeni ili ne
-	\item (private int) lapsPassed - trenutni krug u kojem se igrač nalazi
-	\item (private Vector3) lastPos - zadnja pozicija automobila koja sadrzi (x, y, z) koordinate
-	\item (private int) points - bodovi igrača
-	\item (public Text) victoryText - referenca na tekst koji pokazuje, ako je korisnik pobjedio
-	\item (public Text) lapText - referenca na tekst trenutnog kruga
-	\item (public Text) pointsText - referenca na tekst bodova 
-	\item (private string[]) tireNames - pomoćni niz koji se koristi za dohvaćanje referenci kola
-	\item (private string[]) tirePivotNames - pomoćni niz koji se koristi za dohvaćanje pivota kotača
-	\item (private string[]) wheelColliderNames - pomoćni niz koji se koristi za dohvaćanje kolnih sudarača
-	\item (private WheelCollider[]) wheelColliders - reference na kolne sudarače
-	\item (private GameObject[]) steerWheels - reference na dva kotača koja se zakreću prilikom skretanja
-	\item (public float) antiRoll - sila koja se dodaje da se ne okrene automobil
-	\item (private GameObject[]) tires - reference na kotače
-	\item (private GameObject[]) tirePivots - reference na pivote kotača
-	\item (private GameObject[]) collectableBoxes - reference na kutije koj se skupljaju tokom igranja
-	\item (private AudioSource) collectSound - referenca na zvuk koji se čuje kada se skupi kutija
+  \item \texttt{private float thrustTorque} - broj koji definira moment motora
+  \item \texttt{public float speed} - varijabla koja definira brzinu automobila
+  \item \texttt{private RigidBody carBody} - varijabla koja sadrži kruto tijelo automobila
+  \item \texttt{private bool[] markersPassed} - pomoćni niz boolean varijabli za provjeru markera jesu li prođeni ili ne
+  \item \texttt{private int lapsPassed} - trenutni krug u kojem se igrač nalazi
+  \item \texttt{private Vector3 lastPos} - zadnja pozicija automobila koja sadrzi (x, y, z) koordinate
+  \item \texttt{private int points} - bodovi igrača
+  \item \texttt{public Text victoryText} - referenca na tekst koji pokazuje, ako je korisnik pobjedio
+  \item \texttt{public Text lapText} - referenca na tekst trenutnog kruga
+  \item \texttt{public Text pointsText} - referenca na tekst bodova 
+  \item \texttt{private string[] tireNames} - pomoćni niz koji se koristi za dohvaćanje referenci kola
+  \item \texttt{private string[] tirePivotNames} - pomoćni niz koji se koristi za dohvaćanje pivota kotača
+  \item \texttt{private string[] wheelColliderNames} - pomoćni niz koji se koristi za dohvaćanje kolnih sudarača
+  \item \texttt{private WheelCollider[] wheelColliders} - reference na kolne sudarače
+  \item \texttt{private GameObject[] steerWheels} - reference na dva kotača koja se zakreću prilikom skretanja
+  \item \texttt{public float antiRoll} - sila koja se dodaje da se ne okrene automobil
+  \item \texttt{private GameObject[] tires} - reference na kotače
+  \item \texttt{private GameObject[] tirePivots} - reference na pivote kotača
+  \item \texttt{private GameObject[] collectableBoxes} - reference na kutije koj se skupljaju tokom igranja
+  \item \texttt{private AudioSource collectSound} - referenca na zvuk koji se čuje kada se skupi kutija
 \end{itemize}
 \newpage
 \subsection{Klasa MenuController}
-Klasa koja se koristi za kontrolu glavnog izbornika i pauziranje cijele igre. Skripta je pridružena igrajućem objektu \emph{Menu} koja ima pristup svim igrajućim objektima unutar izbornika. Početna funkcija koja se koristi je \emph{Awake} koja se poziva prije \emph{Start()} funkcija. Funkcije koje se koriste:
+Klasa koja se koristi za kontrolu glavnog izbornika i pauziranje cijele igre. Skripta je pridružena igrajućem objektu \texttt{Menu} koja ima pristup svim igrajućim objektima unutar izbornika. Početna funkcija koja se koristi je \texttt{Awake()} koja se poziva prije \texttt{Start()} funkcija. Funkcije koje se koriste:
 \begin{itemize}
-	\item (void) Awake() - funkcija koja se prva pokreće i postavlja referencu za platno unutar podatkovnog člana \emph{platno}
-	\item (private void) HandlePauseGame() - funkcija koja se poziva pritiskom tipke "esc", te ovisno o trenutnom stanju otvara ili zatvara glavni izbornik
-	\item (void) Update() - funkcija koja se pokreće svaku sliku i koja provjerava da li je korisnik pritisnuo tipku "esc". Provjera se izvršava preko \emph{Input.GetKeyUp(KeyCode.Escape)} jer bi se inače pozivalo svaku sliku i ne bi bilo učinkovito
-	\item (private void) StartNewGame(int scene) - funkcija koja se poziva preko klika na dugme unutar glavnog izbornika. Funkcija je povezana zahvaljujući unity-u, pa ne treba posebno unutar skripte provjeravati. Naredba \emph{Application.LoadLevel(scene)} se koristi za ponovno pokretanje igre jer je scena koja se pokreće početna scena igre
-	\item (private void) QuitGame() - isto tako funkcija koja se poziva klikom na dugme unutar izbornika. Izlaz iz igre je ostvaren preko \emph{Application.QuitGame()}
+	\item \texttt{void Awake()} - funkcija koja se prva pokreće i postavlja referencu za platno unutar podatkovnog člana \emph{platno}
+	\item \texttt{private void HandlePauseGame()} - funkcija koja se poziva pritiskom tipke "esc", te ovisno o trenutnom stanju otvara ili zatvara glavni izbornik
+	\item \texttt{void Update()} - funkcija koja se pokreće svaku sliku i koja provjerava da li je korisnik pritisnuo tipku "esc". Provjera se izvršava preko \texttt{Input.GetKeyUp(KeyCode.Escape)} jer bi se inače pozivalo svaku sliku i ne bi bilo učinkovito
+	\item \texttt{private void StartNewGame (int scene)} - funkcija koja se poziva preko klika na dugme unutar glavnog izbornika. Funkcija je povezana zahvaljujući unity-u, pa ne treba posebno unutar skripte provjeravati. Naredba \texttt{Application.LoadLevel(scene)} se koristi za ponovno pokretanje igre jer je scena koja se pokreće početna scena igre
+	\item \texttt{private void QuitGame()} - isto tako funkcija koja se poziva klikom na dugme unutar izbornika. Izlaz iz igre je ostvaren preko \newline \texttt{Application.QuitGame()}
 \end{itemize}
 Ova klasa nema potrebe za previše podatkovnih članova jer su svi djeca trenutnog igrajućeg objekta i nema ih toliko mnogo. Podatkovni član je:
 \begin{itemize}
-	\item (private Canvas) Menu - sadrži referencu na komponentu platna igrajućeg objekta \emph{Menu}
+	\item \texttt{private Canvas Menu} - sadrži referencu na komponentu platna igrajućeg objekta \texttt{Menu}
 \end{itemize}
 \newpage
 \subsection{Klasa SoundEffects}
-Ova klasa je isto tako pridružena igrajućem objektu \emph{PlayerHolder}, a koristi se za kontroliranje glazbe unutar igre. Omogućava da klikom na tipku "X" je moguće mijenjati glazbu koja se čuje u pozadini tokom igranja. Početna funkcija je isto tako \emph{Awake()} jer je potrebno učitati sve reference za glazbu prije samog pokretanja igre i sviranja te glazbe. Funkciju \emph{Update()} koristimo za provjeravanje klika na dugme i mijenjanje glazbe. Funkcije su:
+Ova klasa je isto tako pridružena igrajućem objektu \texttt{PlayerHolder}, a koristi se za kontroliranje glazbe unutar igre. Omogućava da klikom na tipku "X" je moguće mijenjati glazbu koja se čuje u pozadini tokom igranja. Početna funkcija je isto tako \texttt{Awake()} jer je potrebno učitati sve reference za glazbu prije samog pokretanja igre i sviranja te glazbe. Funkciju \texttt{Update()} koristimo za provjeravanje klika na dugme i mijenjanje glazbe. Funkcije su:
 \begin{itemize}
-	\item (void) Awake() - početna funkcija koja dohvaća sve reference za glazbu i postavlja ih u podatkovne članove. Postavlja se indeks glazbe koja se sluša kako bi se kasnije znalo na koju glazbu prebaciti ako se pritisne tipka za mijenjanje glazbe
-	\item (private void) playNextSong() - funkcija koja se poziva iz \emph{Update} i koja mijenja glazbu kroz igru. Trenutni indeks provjerava da li je to zadnja pjesma unutar niza i poveća se ili postavi na nulu. Isto tako aktivira tekst kako bi igrač mogao znati koja trenutno glazba svira
-	\item (private void) hideNowPlayingText() - pomoćna funkcija koja se pozove nakon nekog vremena da se sakrije tekst koji pokazuje koja glazba trenutno svira
-	\item (void) Update() - funkcija koja se poziva svaku sliku i provjerava da li je korisnik pritisnuo tipku za promjenu glazbe ili ne. Isto tako ako korisnik drži tipku prema dolje se svira zvuk kamiona koji ide unatrag
+	\item \texttt{void Awake()} - početna funkcija koja dohvaća sve reference za glazbu i postavlja ih u podatkovne članove. Postavlja se indeks glazbe koja se sluša kako bi se kasnije znalo na koju glazbu prebaciti ako se pritisne tipka za mijenjanje glazbe
+	\item \texttt{private void playNextSong()} - funkcija koja se poziva iz \newline \texttt{Update()} i koja mijenja glazbu kroz igru. Trenutni indeks provjerava da li je to zadnja pjesma unutar niza i poveća se ili postavi na nulu. Isto tako aktivira tekst kako bi igrač mogao znati koja trenutno glazba svira
+	\item \texttt{private void hideNowPlayingText()} - pomoćna funkcija koja se pozove nakon nekog vremena da se sakrije tekst koji pokazuje koja glazba trenutno svira
+	\item \texttt{void Update()} - funkcija koja se poziva svaku sliku i provjerava da li je korisnik pritisnuo tipku za promjenu glazbe ili ne. Isto tako ako korisnik drži tipku prema dolje se svira zvuk kamiona koji ide unatrag
 \end{itemize}
 Podatkovni članovi sadrže reference na glazbu i indeks glazbe koja trenutno svira, a oni su:
 \begin{itemize}
-	\item (private AudioSource) reverse - sadrži referencu na snimku kamiona koji se kreće unutarga
-	\item (private AudioSource[]) music - sva glazba koja se koristi unutar igre je u ovom nizu
-	\item (private string[]) songNames - imena svih pjesmi koje sviraju tokom igre. Koriste se za tekst, kako bi igrač mogao točno vidjeti koja pjesma svira
-	\item (private int) playingIndex - indeks trenutne pjesme koja svira
-	\item (private Text) nowPlaying - referenca na tekst koji prikazuje koja pjesma trenutno svira
-	\item (privat float) timeToHidePlayingText - vrijeme nakon kojeg se sakrije tekst koji pokazuje koja pjesma trenutno svira 
-	\item (private bool) changedSong - varijabla koja prati je li promijenjena pjesma ili nije kako bi se znalo da li treba sakriti ili ne treba sakriti tekst
+	\item \texttt{private AudioSource reverse} - sadrži referencu na snimku kamiona koji se kreće unutarga
+	\item \texttt{private AudioSource[] music} - sva glazba koja se koristi unutar igre je u ovom nizu
+	\item \texttt{private string[] songNames} - imena svih pjesmi koje sviraju tokom igre. Koriste se za tekst, kako bi igrač mogao točno vidjeti koja pjesma svira
+	\item \texttt{private int playingIndex} - indeks trenutne pjesme koja svira
+	\item \texttt{private Text nowPlaying} - referenca na tekst koji prikazuje koja pjesma trenutno svira
+	\item \texttt{privat float timeToHidePlayingText} - vrijeme nakon kojeg se sakrije tekst koji pokazuje koja pjesma trenutno svira 
+	\item \texttt{private bool changedSong} - varijabla koja prati je li promijenjena pjesma ili nije kako bi se znalo da li treba sakriti ili ne treba sakriti tekst
 \end{itemize}
 \subsection{Klasa RotateBoxes}
-Klasa koja je pridružena praznom igrajućem objektu \emph{CollectableBoxes}, koji je roditelj svih kutija. Ovo je samo pomoćna klasa i koristi se samo zbog rotacije kutija zbog ljepšeg prikaza. Ima samo dvije funkcije \emph{Start()} i \emph{Update()}. Nakon svake slike se kutije okreću unutar \emph{Update()}, a na početku se samo dohvaćaju sve reference od kutija. Podatkovni članovi su:
+Klasa koja je pridružena praznom igrajućem objektu \texttt{CollectableBoxes}, koji je roditelj svih kutija. Ovo je samo pomoćna klasa i koristi se samo zbog rotacije kutija zbog ljepšeg prikaza. Ima samo dvije funkcije \texttt{Start()} i \texttt{Update()}. Nakon svake slike se kutije okreću unutar \texttt{Update()}, a na početku se samo dohvaćaju sve reference od kutija. Podatkovni članovi su:
 \begin{itemize}
-	\item (private int) numBoxes - broj kutija. Potrebna informacija jer se prolazi preko svake kutije i rotira
-	\item (private GameObject[]) boxes - niz referenci na kutije. Šetajući preko ovog niza rotiramo svaku kutiju zasebno unutar funkcije \emph{Update()} 
+	\item \texttt{private int numBoxes} - broj kutija. Potrebna informacija jer se prolazi preko svake kutije i rotira
+	\item \texttt{private GameObject[] boxes} - niz referenci na kutije. Šetajući preko ovog niza rotiramo svaku kutiju zasebno unutar funkcije \newline \texttt{Update()} 
 \end{itemize}

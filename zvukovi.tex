@@ -1,29 +1,31 @@
 \section{Zvuk}
-Teško je danas zamisliti igru bez ikakvih zvukova osim ako ciljano nije dizajnirana na taj način. U stvarnom svijetu svaka osoba različito čuje određene zvukove. Stariji ljudi ne čuju više frekvencije kao i mladi, osoba koja sluša glazbu preko računala na udaljenosti neće isto čuti kao i osoba koja stoji odmah do računala. Svi ovi faktori su imitirani unutar unity-a. Posebne metode provjeravanja pojedinih izvora zvuka, te ambijenta u kojem se nalazi omogućuju da igrač drugačije zvuk ovisno o svojoj poziciji. Formate koje unity podržava je moguće vidjeti u tablici \ref{table:tablicaFormata}.
+Teško je danas zamisliti igru bez ikakvih zvukova osim ako ciljano nije dizajnirana na taj način. U stvarnom svijetu svaka osoba različito čuje određene zvukove. Stariji ljudi ne čuju više frekvencije kao i mladi, osoba koja sluša glazbu preko računala na udaljenosti neće isto čuti kao i osoba koja stoji odmah do računala. Svi ovi faktori su simulirani unutar Unity platforme. Posebne metode provjeravanja pojedinih izvora zvuka, te ambijenta u kojem se nalazi omogućuju da igrač drugačije zvuk ovisno o svojoj poziciji. Formate koje unity podržava je moguće vidjeti u tablici \ref{table:tblFormati}.
 
+\begin{center}
 \begin{table}[h]
 \large
-\begin{tabular}{ l | r } \hline	
+\begin{tabular}{ l r } \hline	
 	Format & Extensions \\
 	\hline MPEG layer 3 & .mp3 \\
-	\hline Ogg Vorbis  & .ogg \\
-	\hline Microsoft Wave  & .wav \\
-	\hline Audio Interchange File Format & .aiff / .aif \\
-	\hline Ultimate Soundtracker module  & .mod \\
-	\hline Impulse Tracker module  & .it \\
-	\hline Scream Tracker module & .s3m \\
-	\hline FastTracker 2 module  & .xm \\
+	 Ogg Vorbis  & .ogg \\
+	 Microsoft Wave  & .wav \\
+	 Audio Interchange File Format & .aiff / .aif \\
+	Ultimate Soundtracker module  & .mod \\
+	 Impulse Tracker module  & .it \\
+	 Scream Tracker module & .s3m \\
+	 FastTracker 2 module  & .xm \\
+	 \hline
 \end{tabular}
-	\label{table:tablicaFormata}
 	\caption{Tablica formata}
+	\label{table:tblFormati}
 \end{table}
-
-Od unity verzije 5.0 unutar unity-a sami zvuk i zvukovna datoteka su odvojeno pohranjene. Zvuku se može pristupati preko skripti korištenjem komponente \emph{Audio Clip}, koju je onda moguće odsvirat. Jedna od najćešćih grešaka prilikom dodavanja zvukova je ostavljanje sviranja na početku (\emph{eng.~play on awake}). Ako se ova opcija ne ugasi onda će se prilikom pokretanja igre početi svirati svi zvukovi kojima nije ovo isključeno. Na mobilnim uređajima audio komponente su komprimirane u mp3 format zbog bržeg načina dekompresije. Znimljiva komponenta je zvučni osluškivač (\emph{eng.~Audio Listener})koji se koristi za snimanje zvukova unutar unity-a.
+\end{center}
+Od verzije 5.0 unutar Unity platforme sami zvuk i zvukovna datoteka su odvojeno pohranjene. Zvuku se može pristupati preko skripti korištenjem komponente \emph{Audio Clip}, koju je onda moguće odsvirati. Jedna od najčešćih grešaka prilikom dodavanja zvukova je ostavljanje sviranja na početku (\emph{eng.~play on awake}). Ako se ova opcija ne ugasi onda će se prilikom pokretanja igre početi svirati svi zvukovi kojima ovo nije isključeno. Na mobilnim uređajima audio komponente su komprimirane u mp3 format zbog bržeg načina dekompresije. Znimljiva komponenta je zvučni osluškivač (\emph{eng.~Audio Listener}) koji se koristi za snimanje zvukova unutar Unity platforme.
 \newpage
 \subsection{Zvučni osluškivač}
-Ova komponenta omogućava igračima pružiti iskustvo kao da su doista oni na pozicijama igrajućih objekata. Kroz ovu igru nije bilo potrebe za korištenje ove komponente na posebnim načinima jer je već predefinirano pridružena kameri. Potrebno je poznavati kako se zvuk ponaša u pojedinim ambijentima (\emph{Reverb}) jer unity ima mogućnost simuliranja pojedinih okruženja ukoliko je to potrebno preko osluškivača. \par
+Ova komponenta omogućava igračima pružiti iskustvo kao da su doista oni na pozicijama igrajućih objekata. Kroz ovu igru nije bilo potrebe za korištenje ove komponente na posebnim načinima jer je već predefinirano pridružena kameri. Potrebno je poznavati kako se zvuk ponaša u pojedinim ambijentima (\emph{Reverb}) jer Unity ima mogućnost simuliranja pojedinih okruženja ukoliko je to potrebno preko osluškivača.
 
 Zanimljivo je da ukoliko se napravi izvor zvuk kao 2D objekt, tada neće paziti na lokaciju odakle izvire zvuk već će se svi ponašati kao da su globalni zvukovi i igrač će ih čuti jednako. Ukoliko se napravi da je izvor zvuka 3D objekt, onda će trebati podešavati jačinu, orijentaciju i lokaciju.
 
 \subsection{Postavke}
-Postavke (\emph{eng.~Settings}) je moguće mijenjati prije pokretanja igre ili čak tokom igre korištenjem klase \emph{AudioSettings}. Nije praktično baš mijenjati postavke tokom igre jer će to uzrokovati ponovno učitavanje svih zvukova koji se koriste, te lošim performansama. Najbolje je prije početka ukoliko ima potrebe podesiti sve postavke. Ako je neki zvuk napravljen tokom igranja, promjena postavki će izbrisati taj zvuk i trebati će ga ponovno instancirati.
+Postavke (\emph{eng.~Settings}) je moguće mijenjati prije pokretanja igre ili čak tokom igre korištenjem klase \texttt{AudioSettings}. Nije praktično baš mijenjati postavke tokom igre jer će to uzrokovati ponovno učitavanje svih zvukova koji se koriste, te lošim performansama. Najbolje je prije početka ukoliko ima potrebe podesiti sve postavke. Ako je neki zvuk napravljen tokom igranja, promjena postavki će izbrisati taj zvuk i trebati će ga ponovno instancirati.

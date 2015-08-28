@@ -1,12 +1,19 @@
 \section{Korisničko sučelje}
-Svaka igra mora imati svoje korisničko sučelje (\emph{eng.~User Interface UI}) gdje će korisnici moći mijenjati pojedine opcije igre. Unity za ovo pruža poseban igrajući objekt koji se zove platno (\emph{eng.~Canvas}). Ukoliko platno već nije izrađeno, onda prilikom izrade teksta za sučelje će unity sam napraviti i platno i tekst kao dijete platna. Dakle sve objekte koji pripadaju korisničkom sučelju moraju biti dijete platna u hijerarhiji.
+Svaka igra mora imati svoje korisničko sučelje (\emph{eng.~User Interface, UI}) gdje će korisnici moći mijenjati pojedine opcije igre. Unity za ovo pruža poseban igrajući objekt koji se zove platno (\emph{eng.~Canvas}). Ukoliko platno već nije izrađeno, onda prilikom izrade teksta za sučelje će Unity sam napraviti i platno i tekst kao dijete platna. Dakle sve objekte koji pripadaju korisničkom sučelju moraju biti dijete platna u hijerarhiji.
 \subsection{Platno}
-Sva platna su ustvari 2D objekti kojima je dodana dubina samo boljeg prikaza u 3D prostoru. Prebacivanjem u 3D pogled će se moći vidjeti da platna izgledaju kao običan list papira na kojima je nekakav tekst, botun ili slika. Igrajući objekti koji su dio platna će se prikazivati prema njihovom položaju u hijerarhiji. Dakle ako imamo više igrajućih objekata, onda će se prvo nacrtati prvo dijete i svi igrajući objekti koji njegova djeca, zatim će drugo dijete i tako dalje. Platno također ima različite modove izrade (\emph{eng.~Render modes}).
+Sva platna su ustvari 2D objekti kojima je dodana dubina zbog prikaza u 3D prostoru. Prebacivanjem u 3D pogled će se moći vidjeti da platna izgledaju kao običan list papira na kojima je nekakav tekst, botun ili slika. Na slici \ref{fig:primjer_platna} se može vidjeti kako izgleda platno u 3D svijetu. Igrajući objekti koji su dio platna će se prikazivati prema njihovom položaju u hijerarhiji. Dakle ako imamo više igrajućih objekata, onda će se prvo nacrtati prvo dijete i svi igrajući objekti koji su njegova djeca, zatim drugo dijete i tako dalje. Platno također ima različite modove izrade (\emph{eng.~Render modes}).
+\begin{figure}[h]
+	\includegraphics[width=12.5cm, height=8cm]{primjer_papir_platna.png}
+	\centering
+	\caption{Primjer platna u 3D svijetu}
+	\label{fig:primjer_platna}
+\end{figure}
+
 \subsubsection{Raspored elemenata}
-Pod rasporedom (\emph{eng.~Layout}) se misli pozicija pojedinih elemenata unutar platna. Dakle dimenzije i odnos prema drugim elementima. Sidrišta (\emph{eng.~Anchors}) imaju jako veliku pri odnosu pojedinih elemata, a o njima će više biti rečenu u nastavaku. Veličina platna se može mijenjati korištenjem alata \emph{Rect Transform}, koji se ponaša kao pravokutnik. Uglavnom se koristi za 2D objekte, ali naravno može i za 3D objekte. Isto tako se može mijenjati pozicija elemenata jednostavnim označavanjem i povlačenjem na željenu lokaciju. Potrebno je razlikovati prilikom mijenjanja veličine objekta da postoje dvije različite transformacije koje se čine jednake. Ako se koristi alat \emph{Rect Tool} označen objekt tada mijenja svoju veličinu (\emph{eng.~Scale}), a ako je selektiran \emph{Rect Transform} mijenjaju se dimenzije objekta (širina i visina). 
-\newpage
+Pod rasporedom (\emph{eng.~Layout}) se misli pozicija pojedinih elemenata unutar platna, dakle dimenzije i odnos prema drugim elementima. Sidrišta (\emph{eng.~Anchors}) imaju jako veliku ulogu pri odnosu pojedinih elemata, a o njima će više biti rečeno u nastavaku. Veličina platna se može mijenjati korištenjem alata \emph{Rect Transform}. Uglavnom se koristi za 2D objekte, ali naravno može i za 3D objekte. Isto tako se može mijenjati pozicija elemenata označavanjem i povlačenjem na željenu lokaciju. Potrebno je razlikovati, prilikom mijenjanja veličine objekta, da postoje dvije različite transformacije koje se čine jednake. Ako se koristi alat \emph{Rect Tool} označen objekt tada mijenja svoju veličinu (\emph{eng.~Scale}), a ako je selektiran \emph{Rect Transform} mijenjaju se dimenzije objekta (širina i visina). 
+
 \subsubsection{Sidrišta}
-Sidrišta su četiri trokutasta elementa koja definiraju točku od koje će se kretati elementi i koju će pratiti za promjene. Zanimljiva funkcionalnost koja omogućavaju da element mijenja dimenzije ovisno o promjeni dimenzija elemenata na koji je pridružen, ako ujedno i je pridružen. Moguće je na drugi element postaviti da sidrište prati visinu odabranog elementa, te će se trenutni element mijenjati relativno s obzirom na pridruženi. Na slici \ref{fig:sidriste} je moguće vidjeti tekstualni element kojemu je sidrište postavljeno da prati gornji desni kut roditelja. Na ovaj način će se tekst uvijek pomicati relativno sa gornjim desnim kutom.
+Sidrišta su četiri trokutasta elementa koja definiraju točku od koje će se kretati elementi i koju će pratiti za promjene. Zanimljiva funkcionalnost koju omogućavaje je da element mijenja dimenzije ovisno o elemntu kojeg prati. Moguće je na drugi element postaviti da sidrište prati visinu odabranog elementa, te će se trenutni element mijenjati relativno s obzirom na pridruženi. Na slici \ref{fig:sidriste} je moguće vidjeti tekstualni element kojemu je sidrište postavljeno da prati gornji desni kut roditelja. Na ovaj način će se tekst uvijek pomicati relativno sa gornjim desnim kutom.
 \begin{figure}[h]
 	\includegraphics[width=12.5cm, height=8cm]{sidriste.png}
 	\centering
@@ -14,8 +21,10 @@ Sidrišta su četiri trokutasta elementa koja definiraju točku od koje će se k
 	\label{fig:sidriste}
 \end{figure}
 \newline
-Sa desne strane je moguće vidjeti sve komponente koje ima element, te standardne opcije kao što su x, y i z transformacija unutar roditelja, visina i širina, minimalna i maksimalna vrijednost sidrišta i veličina. Tekstu možemo definirati oblik, veličinu, poravnavanje i boju.
-\newpage
+Sa desne strane na slici \ref{fig:sidriste} je moguće vidjeti sve komponente koje ima element, te standardne opcije kao što su x, y i z transformacija unutar roditelja, visina i širina, minimalna i maksimalna vrijednost sidrišta i veličina. Tekstu možemo definirati oblik, veličinu, poravnavanje i boju.
+
+\subsection{Tekst objekti}
+Tokom igranja se može u gornjem desnom kutu vidjeti tekst, koji pokazuje na kojem smo trenutno krugu, u gornjem lijevom kutu bodove koje je igrač ostvario, a prilikom završetka igre se prikazuje tekst koji govori da je igrač uspješno odvozio i ispisuje ukupne bodove koje je igrač sakupio. Ovo su ustvari tri različite tekstualna objekta preko čije se reference može mijenjati tekst iz skripti. 
 
 \subsubsection{Modovi izrade}
 Postoje dvije glavne podjele ovih modova:
@@ -29,15 +38,12 @@ Postoje dvije glavne podjele ovih modova:
 \end{itemize}
 
 \subsection{Glavni izbornik}
-Glavni izbornik se sastoji od tri igrajuća objekta, jednog teksta i dva botuna. Izborniku je pridružena i skripta koja kontrolira prikaz i funkcionalnost botuna. Koristi se od unity-a ugrađena funkcionalnost za pozivanja metoda unutar skripte. Svaki botun ima okidač na klik, te se samo treba postaviti metoda koja se želi pozvati. U igri su to dvije metode započmi novu igru (\emph{StartNewGame}) i izađi iz igre (\emph{StartNewGame}). Izgled izbornika se može vidjeti na slici \ref{fig:glavniIzbornik}.
+Glavni izbornik (slika \ref{fig:glavniIzbornik}) se sastoji od tri igrajuća objekta, jednog teksta i dva botuna. Izborniku je pridružena i skripta koja kontrolira prikaz i funkcionalnost botuna. Koristi se ugrađena funkcionalnost Unity platforme za pozivanje metoda unutar skripte. Svaki botun ima okidač na klik, te se samo treba postaviti metoda koja se želi pozvati. U igri su to dvije metode započni novu igru \texttt{QuitGame} i izađi iz igre \texttt{StartNewGame}. 
 \begin{figure}[h]
 	\includegraphics[width=12.5cm, height=8cm]{glavni_izbornik.png}
 	\centering
 	\caption{Glavni izbornik}
 	\label{fig:glavniIzbornik}
 \end{figure}
-\newline
-Pauziranje same igre se obavlja postavljanjem razlike vremena između slika (\emph{Time.deltaTime}) na 0. Na ovaj način se ništa ne kreće i dobije se dojam da je igra pauzirana. Nova igra i izlazak iz igre se izvršavaju preko klase aplikacija (\emph{eng.~Application}) koja se isto može koristiti za pokretanje novog levela igre.
-\newpage
-\subsection{Tekst objekti}
-Tokom igranja se može u gornjem desnom kutu vidjeti tekst, koji pokazuje na kojem smo trenutno krugu, u gornjem lijevom kutu bodove koje je igrač ostvario, a prilikom završetka igre se prikazuje tekst koji govori da je igrač uspješno odvozio i ispisuje ukupne bodove koje je igrač sakupio. Ovo su ustvari tri različite tekstualna objekta preko čije se reference može mijenjati tekst iz skripti. 
+
+Pauziranje same igre se obavlja postavljanjem razlike vremena između slika \texttt{Time.deltaTime} na 0. Na ovaj način se ništa ne kreće i dobije se dojam da je igra pauzirana. Nova igra i izlazak iz igre se izvršavaju preko klase aplikacija (\emph{eng.~Application}) koja se isto može koristiti za pokretanje novog levela igre.

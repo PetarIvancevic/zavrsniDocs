@@ -38,7 +38,7 @@ Trgovina (\emph{eng.~Asset Store}) se koristi za kupnju ili nabavljanje gotovih 
 \end{figure}
 
 \subsection{Igrajući objekti}
-Svaki objekt koji se može vidjeti u unity-u je \textbf{igrajući objekt}. Kada se napravi bilo koji objekt on treba imati svoju poziciju unutar svijeta. Kako bi se mogla znati njegova pozicija koristimo komponente. Svaki objekt mora imati svoju transformaciju (\emph{eng.~ Transform}). U suštini igrajući objekti su samo kontejneri koji sadrže komponente.
+Svaki objekt koji se može vidjeti u Unity platformi je \textbf{igrajući objekt}. Kada se napravi bilo koji objekt on treba imati svoju poziciju unutar svijeta. Kako bi se mogla znati njegova pozicija koristimo komponente. Svaki objekt mora imati svoju transformaciju (\emph{eng.~ Transform}). U suštini igrajući objekti su samo kontejneri koji sadrže komponente.
 
 \subsection{Kamera}
 Kamere se koriste za prikaz igre. Koristeći više kamera moguće je napraviti različite efekte i animacije za igrača, te stvoriti jedinstveno iskustvo tijekom igranja igre. Kamere imaju dvije moguće projekcije (ortografijsku i perspektivnu). Ortografijska se koristi za 2D igrice ili ako nije bitna dubina u igricama. Najčešće su to neke platformske igre, puzzle ili slično. Perspektivna se koristi ako želimo pokazati dubinu u igri. U ovoj igri se koristi perspektivna projekcija, te je postavljena kao dijete automobilskog igrajućeg objekta. Na ovaj način kamera slijedi automobil i dobiva se pravo iskustvo vožnje automobila.
@@ -110,12 +110,13 @@ Prilikom vožnje automobila za bolju simulaciju potrebno je okretati i kola. Za 
 Rotacija kotača bi trebala biti oko njegove osi, te se zato mora postaviti pivot u sredinu kotača. Ovo se obavlja tijekom izrade samog modela, te treba paziti na to prije unosa u unity. Ako se pivot nije centrirao prilikom izrade, onda se treba obavljati popravljanje. Koraci za popravljanje:
 
 \begin{enumerate}
-	\item Pronaći objekt (kotač) unutar hijerarhije
-	\item Napraviti novi prazni objekt na istoj razini kao i kotač
-	\item Kotač ubaciti u prazni objekt
+	\item Pronaći objekt (kotač) unutar hijerarhije.
+	\item Napraviti novi prazni objekt na istoj razini kao i kotač.
+	\item Kotač ubaciti u prazni objekt.
 \end{enumerate}
-Sada za okretanje kotača se koristi novi prazni objekt jer je njegov pivot centriran. Ovakav pristup je jako učestal zbog dizajnera koji ne paze na pivote unutar svojih modela.
+Sada se za okretanje kotača se koristi novi prazni objekt jer je njegov pivot centriran. Ovakav pristup je jako učestao zbog dizajnera koji ne paze na pivote unutar svojih modela.
 
 \subsubsection{Problemi u zavojima}
-Prilikom vožnje vozila dodavanjem samo kolnih sudarača ne bismo dobili potpunu imitaciju pravog vozila. Jedan od problema koji se javlja je preokretanje u zavojima. Ova pojava je sasvim opravdana i nije nikakva greška programa. Što se ustvari događa? Kada vozilo uđe u zavoj i započme skretanje, na njega djeluje centrifugalna sila, podigne se prednji kotač sa tla i kako ne postoji protusila preokrene se. \par
+Prilikom vožnje vozila dodavanjem samo kolnih sudarača ne bismo dobili potpunu imitaciju pravog vozila. Jedan od problema koji se javlja je preokretanje u zavojima. Ova pojava je sasvim opravdana i nije nikakva greška programa. Što se ustvari događa? Kada vozilo uđe u zavoj i započne skretanje, na njega djeluje centrifugalna sila, podigne se prednji kotač sa tla i kako ne postoji protusila preokrene se.
+
 Za ovaj slučaj postoji više rješenja, a onaj koji se koristi u igrici je sljedeći. Pri skretanju se provjeri koji kotač se podiže od tla i na njega se primjeni sila koja djeluje u smjeru gravitacije. Na ovaj način se smanji utjecaj centrifugalne sile, te samim time teže preokrenuti vozilo.

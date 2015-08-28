@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  27 AUG 2015 13:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  28 AUG 2015 18:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -993,35 +993,49 @@ Package hyperref Warning: Composite letter `\textasciicaron+c'
 
 
 ]
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 37.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/omlcmr.fd
+File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/m/it' in size <12> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 37.
+
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\dj' on input line 43.
+(hyperref)                removing `\dj' on input line 46.
 
-[18] <gotoveSlike/roadMarkers.png, id=381, 1284.8pt x 803.0pt>
+[18]
+Overfull \hbox (18.51015pt too wide) in paragraph at lines 49--50
+\OT1/cmr/m/n/12 funk-cije koje se po-kre^^Scu za ani-mi-ra-nje ili ma-ni-pu-li-
+ra-nje li-ko-vima (\OT1/pcr/m/n/12 Update,
+ []
+
+<gotoveSlike/roadMarkers.png, id=381, 1284.8pt x 803.0pt>
 File: gotoveSlike/roadMarkers.png Graphic file (type png)
 
 <use gotoveSlike/roadMarkers.png>
-Package pdftex.def Info: gotoveSlike/roadMarkers.png used on input line 51.
+Package pdftex.def Info: gotoveSlike/roadMarkers.png used on input line 54.
 (pdftex.def)             Requested size: 355.64423pt x 227.61984pt.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 56.
+(hyperref)                removing `\textasciicaron' on input line 59.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\dj' on input line 56.
+(hyperref)                removing `\dj' on input line 59.
 
 [19 <./gotoveSlike/roadMarkers.png>]
-Overfull \hbox (14.99994pt too wide) in paragraph at lines 65--66
+Overfull \hbox (14.99994pt too wide) in paragraph at lines 69--70
 [][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 70.
+(hyperref)                removing `\textasciicaron' on input line 74.
 
 ) [20]
 \openout2 = `korisnicko_sucelje.aux'.
@@ -1037,42 +1051,51 @@ Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
 (hyperref)                removing `\textasciicaron' on input line 1.
 
-[21
+<gotoveSlike/primjer_papir_platna.png, id=406, 1284.8pt x 803.0pt>
+File: gotoveSlike/primjer_papir_platna.png Graphic file (type png)
+
+<use gotoveSlike/primjer_papir_platna.png>
+Package pdftex.def Info: gotoveSlike/primjer_papir_platna.png used on input lin
+e 6.
+(pdftex.def)             Requested size: 355.64423pt x 227.61984pt.
+ [21
 
 
-] <gotoveSlike/sidriste.png, id=410, 1284.8pt x 803.0pt>
+ <./gotoveSlike/primjer_papir_platna.png>] <gotoveSlike/sidriste.png, id=415, 1
+284.8pt x 803.0pt>
 File: gotoveSlike/sidriste.png Graphic file (type png)
 
 <use gotoveSlike/sidriste.png>
-Package pdftex.def Info: gotoveSlike/sidriste.png used on input line 11.
-(pdftex.def)             Requested size: 355.64423pt x 227.61984pt.
- [22 <./gotoveSlike/sidriste.png>]
-Overfull \hbox (5.9232pt too wide) in paragraph at lines 28--29
-\OT1/cmr/m/n/12 igraju^^Sci objekt. Mo^^Sci ^^Sce se pos-ta-viti u po-za-dini i
-za ne-kih dru-gih igraju^^Scih
- []
-
-<gotoveSlike/glavni_izbornik.png, id=419, 1284.8pt x 803.0pt>
-File: gotoveSlike/glavni_izbornik.png Graphic file (type png)
-
-<use gotoveSlike/glavni_izbornik.png>
-Package pdftex.def Info: gotoveSlike/glavni_izbornik.png used on input line 34.
-
+Package pdftex.def Info: gotoveSlike/sidriste.png used on input line 18.
 (pdftex.def)             Requested size: 355.64423pt x 227.61984pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[23]) [24 <./gotoveSlike/glavni_izbornik.png>]
+[22]
+Overfull \hbox (5.9232pt too wide) in paragraph at lines 37--38
+\OT1/cmr/m/n/12 igraju^^Sci objekt. Mo^^Sci ^^Sce se pos-ta-viti u po-za-dini i
+za ne-kih dru-gih igraju^^Scih
+ []
+
+<gotoveSlike/glavni_izbornik.png, id=423, 1284.8pt x 803.0pt>
+File: gotoveSlike/glavni_izbornik.png Graphic file (type png)
+
+<use gotoveSlike/glavni_izbornik.png>
+Package pdftex.def Info: gotoveSlike/glavni_izbornik.png used on input line 43.
+
+(pdftex.def)             Requested size: 355.64423pt x 227.61984pt.
+ [23 <./gotoveSlike/sidriste.png>])
+[24 <./gotoveSlike/glavni_izbornik.png>]
 \openout2 = `zvukovi.aux'.
 
  (./zvukovi.tex
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 6.
+(Font)              <14.4> on input line 7.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 6.
+(Font)              <7> on input line 7.
 
-Overfull \hbox (12.94113pt too wide) in paragraph at lines 21--22
+Overfull \hbox (12.94113pt too wide) in paragraph at lines 23--24
 \OT1/cmr/m/n/12 gre^^Tsaka pri-li-kom do-da-va-nja zvu-kova je os-tav-lja-nje s
 vi-ra-nja na po^^Tcetku (\OT1/cmr/m/it/12 eng. play
  []
@@ -1084,12 +1107,12 @@ vi-ra-nja na po^^Tcetku (\OT1/cmr/m/it/12 eng. play
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 23.
+(hyperref)                removing `\textasciicaron' on input line 25.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 23.
+(hyperref)                removing `\textasciicaron' on input line 25.
 
 ) [26]
 \openout2 = `opis_klasa.aux'.
@@ -1098,30 +1121,60 @@ Package hyperref Warning: Composite letter `\textasciicaron+c'
 
 
 ]
-Overfull \hbox (1.5626pt too wide) in paragraph at lines 34--35
-[]\OT1/cmr/m/n/12 (private void) Ro-ta-teT-he-Ti-res(float mo-ve-ment) - pomo^^
-Scna funk-cija koja
+Overfull \hbox (11.33371pt too wide) in paragraph at lines 34--35
+[]\OT1/pcr/m/n/12 private void RotateTheTires (float movement) \OT1/cmr/m/n/12 
+- pomo^^Scna
  []
 
 
-Overfull \hbox (9.03891pt too wide) in paragraph at lines 37--38
-[]\OT1/cmr/m/n/12 (private void) up-da-te-Texts() - funk-cija za mi-je-nja-nje 
-tek-sta u ko-risni^^Tckom
- []
-
-[28] [29] [30]
-Overfull \hbox (6.7076pt too wide) in paragraph at lines 72--73
-\OT1/cmr/m/n/12 Skripta je pri-dru^^Tzena igraju^^Scem objektu \OT1/cmr/m/it/12
- Menu \OT1/cmr/m/n/12 koja ima pris-tup svim igraju^^Scim
+Overfull \hbox (0.62288pt too wide) in paragraph at lines 39--40
+[]\OT1/pcr/m/n/12 private void resetMarkers() \OT1/cmr/m/n/12 - funk-cija za re
+-se-ti-ra-nje mar-kera,
  []
 
 
-Overfull \hbox (8.64308pt too wide) in paragraph at lines 82--83
-[]\OT1/cmr/m/n/12 (private Ca-nvas) Menu - sadr^^Tzi re-fe-rencu na kom-po-nent
-u platna igraju^^Sceg
+Overfull \hbox (11.08539pt too wide) in paragraph at lines 41--42
+[]\OT1/pcr/m/n/12 private void checkTheRightMarker (string marker) \OT1/cmr/m/n
+/12 - ova
  []
 
-[31] [32]) [33]
+[28]
+Overfull \hbox (11.8889pt too wide) in paragraph at lines 43--44
+[]\OT1/pcr/m/n/12 private void collectBox (GameObject go) \OT1/cmr/m/n/12 - kad
+a igra^^Tc pro[]de
+ []
+
+
+Overfull \hbox (7.54831pt too wide) in paragraph at lines 44--45
+[]\OT1/pcr/m/n/12 void OnTriggerEnter (Collider col) \OT1/cmr/m/n/12 - funk-cij
+a doga[]daja koja
+ []
+
+[29]
+Overfull \hbox (11.86938pt too wide) in paragraph at lines 62--63
+[]\OT1/pcr/m/n/12 private WheelCollider[] wheelColliders \OT1/cmr/m/n/12 - re-f
+e-rence na kolne
+ []
+
+
+Overfull \hbox (1.94121pt too wide) in paragraph at lines 66--67
+[]\OT1/pcr/m/n/12 private GameObject[] tirePivots \OT1/cmr/m/n/12 - re-fe-rence
+ na pi-vote kota^^Tca 
+ []
+
+[30]
+Overfull \hbox (5.78784pt too wide) in paragraph at lines 72--73
+\OT1/cmr/m/n/12 Skripta je pri-dru^^Tzena igraju^^Scem objektu \OT1/pcr/m/n/12 
+Menu \OT1/cmr/m/n/12 koja ima pris-tup svim igraju^^Scim
+ []
+
+[31]
+Overfull \hbox (2.28845pt too wide) in paragraph at lines 88--89
+[]\OT1/pcr/m/n/12 void Awake() \OT1/cmr/m/n/12 - po^^Tcetna funk-cija koja do-h
+va^^Sca sve re-fe-rence za glazbu
+ []
+
+[32]) [33]
 \openout2 = `zakljucak.aux'.
 
  (./zakljucak.tex
@@ -1155,39 +1208,34 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 42.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 42.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 42.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: F2738DD72249AD2491B9ACFA4EC44CA9;3052.
+(rerunfilecheck)             Checksum: 1E9E1C245A6385F23E974CD3283A923E;3052.
 
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.28pt have occurred.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 42.
  ) 
 Here is how much of TeX's memory you used:
- 18209 strings out of 493089
- 332718 string characters out of 6134842
+ 18231 strings out of 493089
+ 333196 string characters out of 6134842
  418512 words of memory out of 5000000
- 21142 multiletter control sequences out of 15000+600000
- 10102 words of font info for 36 fonts, out of 8000000 for 9000
+ 21159 multiletter control sequences out of 15000+600000
+ 10401 words of font info for 37 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,8n,97p,937b,1242s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{lstlisting.9} has been referenced but does not ex
-ist, replaced by a fixed one
-
-{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/tex
-live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texl
-ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texliv
-e/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive
-/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/
-2015/texmf-dist/fonts/type1/urw/courier/ucrb8a.pfb></usr/local/texlive/2015/tex
-mf-dist/fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on main.pdf (35 pages, 4064980 bytes).
+ 62i,8n,97p,899b,1242s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
+exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/te
+xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/tex
+live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texli
+ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texliv
+e/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive
+/2015/texmf-dist/fonts/type1/urw/courier/ucrb8a.pfb></usr/local/texlive/2015/te
+xmf-dist/fonts/type1/urw/courier/ucrr8a.pfb>
+Output written on main.pdf (35 pages, 4707318 bytes).
 PDF statistics:
- 557 PDF objects out of 1000 (max. 8388607)
- 497 compressed objects within 5 object streams
+ 566 PDF objects out of 1000 (max. 8388607)
+ 502 compressed objects within 6 object streams
  149 named destinations out of 1000 (max. 500000)
- 432 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 437 words of extra memory for PDF output out of 10000 (max. 10000000)
 

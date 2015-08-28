@@ -32,11 +32,11 @@
 \contentsline {subsection}{\numberline {4.5}Generi\IeC {\v c}ke funkcije}{20}{subsection.4.5}
 \contentsline {section}{\numberline {5}Korisni\IeC {\v c}ko su\IeC {\v c}elje}{21}{section.5}
 \contentsline {subsection}{\numberline {5.1}Platno}{21}{subsection.5.1}
-\contentsline {subsubsection}{\numberline {5.1.1}Raspored elemenata}{21}{subsubsection.5.1.1}
+\contentsline {subsubsection}{\numberline {5.1.1}Raspored elemenata}{22}{subsubsection.5.1.1}
 \contentsline {subsubsection}{\numberline {5.1.2}Sidri\IeC {\v s}ta}{22}{subsubsection.5.1.2}
-\contentsline {subsubsection}{\numberline {5.1.3}Modovi izrade}{23}{subsubsection.5.1.3}
-\contentsline {subsection}{\numberline {5.2}Glavni izbornik}{23}{subsection.5.2}
-\contentsline {subsection}{\numberline {5.3}Tekst objekti}{24}{subsection.5.3}
+\contentsline {subsection}{\numberline {5.2}Tekst objekti}{22}{subsection.5.2}
+\contentsline {subsubsection}{\numberline {5.2.1}Modovi izrade}{23}{subsubsection.5.2.1}
+\contentsline {subsection}{\numberline {5.3}Glavni izbornik}{24}{subsection.5.3}
 \contentsline {section}{\numberline {6}Zvuk}{25}{section.6}
 \contentsline {subsection}{\numberline {6.1}Zvu\IeC {\v c}ni oslu\IeC {\v s}kiva\IeC {\v c}}{26}{subsection.6.1}
 \contentsline {subsection}{\numberline {6.2}Postavke}{26}{subsection.6.2}
