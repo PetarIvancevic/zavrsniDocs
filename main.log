@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  1 SEP 2015 10:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  1 SEP 2015 10:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1117,7 +1117,13 @@ Package hyperref Warning: Composite letter `\textasciicaron+c'
 ) [26]
 \openout2 = `opis_klasa.aux'.
 
- (./opis_klasa.tex [27
+ (./opis_klasa.tex
+Overfull \hbox (1.92354pt too wide) in paragraph at lines 13--14
+\OT1/cmr/m/n/12 ulazne pa-ra-me-tre za baznu klasu preko klju^^Tcne rije^^Tci \
+OT1/pcr/m/n/12 base\OT1/cmr/m/n/12 . Pri-mjer kori^^Tstenja
+ []
+
+[27
 
 
 ]
@@ -1232,7 +1238,7 @@ ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texliv
 e/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive
 /2015/texmf-dist/fonts/type1/urw/courier/ucrb8a.pfb></usr/local/texlive/2015/te
 xmf-dist/fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on main.pdf (35 pages, 4707345 bytes).
+Output written on main.pdf (35 pages, 4707330 bytes).
 PDF statistics:
  566 PDF objects out of 1000 (max. 8388607)
  502 compressed objects within 6 object streams

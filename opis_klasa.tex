@@ -1,5 +1,5 @@
 \section{Klase}
-Svaka klasa koja se definira nalazi se unutar svoje zasebne skripte. Moguće je nasljeđivanje iako u ovoj igri nije bilo potrebe. Primjer klase B koja nasljeđuje klasu A je moguće vidjeti u ispisu \ref{primjernasljedivanja}. Potrebno je napomenuti da klase koje nasljeđuju \emph{MonoBehavior} ne smiju imati svoje konstruktore, ali klase koje ne nasljeđuju \emph{MonoBehavior} moraju imati svoj konstruktor. 
+Svaka klasa koja se izradi nalazi se unutar svoje zasebne skripte. Moguće je nasljeđivanje iako u ovoj igri nije bilo potrebe. Primjer klase B koja nasljeđuje klasu A je moguće vidjeti u ispisu \ref{primjernasljedivanja}. Potrebno je napomenuti da klase koje nasljeđuju \texttt{MonoBehavior} ne smiju imati svoje konstruktore, ali klase koje ne nasljeđuju \texttt{MonoBehavior} moraju imati svoj konstruktor. 
 \begin{lstlisting}[caption={Primjer nasljeđivanja}, label=primjernasljedivanja]
 using UnityEngine;
 using System.Collections;
@@ -10,7 +10,7 @@ public class B : A {
 	}	
 }
 \end{lstlisting}
-Ukoliko klasa nasljeđuje već nasljeđenu klasu onda je moguće definirati isto ulazne parametre za baznu klasu preko ključne riječi \emph{base}. Primjer korištenja ove naredbe se može vidjeti u ispisu \ref{nasljedivanjedva}. Klasa C nasljeđuje gore definiranu klasu B i prosljeđuje joj ulazni argument tipa string "mazda". Ako se ne definira ulazni argument onda će se pozvati predefinirani konstruktor koji ne prima nijedan argument.
+Ukoliko klasa nasljeđuje već nasljeđenu klasu onda je moguće definirati isto ulazne parametre za baznu klasu preko ključne riječi \texttt{base}. Primjer korištenja ove naredbe se može vidjeti u ispisu \ref{nasljedivanjedva}. Klasa C nasljeđuje gore definiranu klasu B i prosljeđuje joj ulazni argument tipa string "mazda". Ako se ne definira ulazni argument onda će se pozvati predefinirani konstruktor koji ne prima nijedan argument.
 
 \begin{lstlisting}[caption={Primjer nasljeđivanja nasljeđene klase}, label=nasljedivanjedva]
 using UnityEngine;
