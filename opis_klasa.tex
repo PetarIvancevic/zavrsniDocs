@@ -1,5 +1,5 @@
 \section{Klase}
-Svaka klasa koja se izradi nalazi se unutar svoje zasebne skripte. Moguće je nasljeđivanje iako u ovoj igri nije bilo potrebe. Primjer klase B koja nasljeđuje klasu A je moguće vidjeti u ispisu \ref{primjernasljedivanja}. Potrebno je napomenuti da klase koje nasljeđuju \texttt{MonoBehavior} ne smiju imati svoje konstruktore, ali klase koje ne nasljeđuju \texttt{MonoBehavior} moraju imati svoj konstruktor. 
+Svaka klasa koja se izradi nalazi se unutar svoje zasebne skripte. Moguće je nasljeđivanje iako u ovoj igri nije bilo potrebe. Primjer klase B koja nasljeđuje klasu A je moguće vidjeti u ispisu \ref{primjernasljedivanja}. Potrebno je napomenuti da klase koje nasljeđuju \texttt{MonoBehavior} ne smiju imati svoje konstruktore. \texttt{MonoBehavior} je bazna klasa svim skriptama u Unity platformi i ona se brine o konstruktoru nasljeđene klase.
 \begin{lstlisting}[caption={Primjer nasljeđivanja}, label=primjernasljedivanja]
 using UnityEngine;
 using System.Collections;
@@ -23,11 +23,11 @@ public class C : B {
 }
 \end{lstlisting}
 
-Kako trenutna igra nije toliko složena ne treba joj previše klasa. Sve klase koje su korištene unutar igre, kao i njihov opis je moguće vidjeti ispod. Svaka klasa je navedena kao i igrajući objekt kojem je pridružena, a detaljan opis se nalazi u podpoglavljima pojedine klase.
+Kako trenutna igra nije toliko složena ne treba joj previše klasa. Sve klase koje su korištene unutar igre, kao i njihov opis je moguće vidjeti u nastavku teksta. Svaka klasa je navedena kao i igrajući objekt kojem je pridružena, a detaljan opis se nalazi u podpoglavljima pojedine klase.
 \newpage
 
 \subsection{Klasa CarMovement}
-Glavna klasa koja se koristi za praćenje trenutnog kruga, koliko je bodova igrač skupio i kretanje. Pridružena je igrajućem objektu \texttt{PlayerHolder}, koji kao svoju djecu ima sve igrajuće objekte vezane uz vozilo. Kada se pokrene igra pozove se \texttt{Start()} funkcija koja dohvaća sve reference potrebne za pokretanje vozila, mijenjanje teksta i provjeravanje trenutnog kruga. Svakom promjenom slike se poziva \texttt{FixedUpdate()}, gdje se provjerava svaki unos od igrača i pozivaju druge privatne funkcije. Funkcije koje se koriste:
+Klasa \texttt{CarMovement} je glavna klasa koja se koristi za praćenje trenutnog kruga, koliko je bodova igrač skupio i kretanje. Pridružena je igrajućem objektu \texttt{PlayerHolder}, koji kao svoju djecu ima sve igrajuće objekte vezane uz vozilo. Kada se pokrene igra pozove se \texttt{Start()} funkcija koja dohvaća sve reference potrebne za pokretanje vozila, mijenjanje teksta i provjeravanje trenutnog kruga. Svakom promjenom slike se poziva \texttt{FixedUpdate()}, gdje se provjerava svaki unos od igrača i pozivaju druge privatne funkcije. Funkcije koje se koriste:
 \begin{itemize}
 	\item \texttt{public void Start()} - sve reference se inicijaliziraju, prilikom pokretanja skripte.
 	\item \texttt{public void) MoveCar (float steer)} - pokretanje vozila se izvršava pozivajući ovu funkciju. Ovisno o predznaku varijable \texttt{steer} će se vozilo kretati naprijed ili natrag.
@@ -83,7 +83,7 @@ Ova klasa nema potrebe za previše podatkovnih članova jer su svi djeca trenutn
 \end{itemize}
 \newpage
 \subsection{Klasa SoundEffects}
-Ova klasa je isto tako pridružena igrajućem objektu \texttt{PlayerHolder}, a koristi se za kontroliranje glazbe unutar igre. Omogućava da klikom na tipku "X" je moguće mijenjati glazbu koja se čuje u pozadini tokom igranja. Početna funkcija je isto tako \texttt{Awake()} jer je potrebno učitati sve reference za glazbu prije samog pokretanja igre i sviranja te glazbe. Funkciju \texttt{Update()} koristimo za provjeravanje klika na dugme i mijenjanje glazbe. Funkcije su:
+Ova klasa je isto tako pridružena igrajućem objektu \texttt{PlayerHolder}, a koristi se za kontroliranje glazbe unutar igre. Omogućava da je klikom na x moguće mijenjati glazbu koja se čuje u pozadini tokom igranja. Početna funkcija je isto tako \texttt{Awake()} jer je potrebno učitati sve reference za glazbu prije samog pokretanja igre i sviranja te glazbe. Funkciju \texttt{Update()} koristimo za provjeravanje klika na dugme i mijenjanje glazbe. Funkcije su:
 \begin{itemize}
 	\item \texttt{void Awake()} - početna funkcija koja dohvaća sve reference za glazbu i postavlja ih u podatkovne članove. Postavlja se indeks glazbe koja se sluša kako bi se kasnije znalo na koju glazbu prebaciti ako se pritisne tipka za mijenjanje glazbe.
 	\item \texttt{private void playNextSong()} - funkcija koja se poziva iz \newline \texttt{Update()} i koja mijenja glazbu kroz igru. Trenutni indeks provjerava da li je to zadnja pjesma unutar niza i poveća se ili postavi na nulu. Isto tako aktivira tekst kako bi igrač mogao znati koja trenutno glazba svira.

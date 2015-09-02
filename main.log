@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  1 SEP 2015 10:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  2 SEP 2015 16:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1127,6 +1127,12 @@ OT1/pcr/m/n/12 base\OT1/cmr/m/n/12 . Pri-mjer kori^^Tstenja
 
 
 ]
+Overfull \hbox (11.07686pt too wide) in paragraph at lines 30--31
+\OT1/cmr/m/n/12 ra-va-nje tre-nut-nog kruga. Sva-kom pro-mje-nom slike se po-zi
+va \OT1/pcr/m/n/12 FixedUpdate()\OT1/cmr/m/n/12 ,
+ []
+
+
 Overfull \hbox (11.33371pt too wide) in paragraph at lines 34--35
 []\OT1/pcr/m/n/12 private void RotateTheTires (float movement) \OT1/cmr/m/n/12 
 - pomo^^Scna
@@ -1138,13 +1144,13 @@ Overfull \hbox (0.62288pt too wide) in paragraph at lines 39--40
 -se-ti-ra-nje mar-kera,
  []
 
-
+[28]
 Overfull \hbox (11.08539pt too wide) in paragraph at lines 41--42
 []\OT1/pcr/m/n/12 private void checkTheRightMarker (string marker) \OT1/cmr/m/n
 /12 - ova
  []
 
-[28]
+
 Overfull \hbox (11.8889pt too wide) in paragraph at lines 43--44
 []\OT1/pcr/m/n/12 private void collectBox (GameObject go) \OT1/cmr/m/n/12 - kad
 a igra^^Tc pro[]de
@@ -1238,7 +1244,7 @@ ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texliv
 e/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive
 /2015/texmf-dist/fonts/type1/urw/courier/ucrb8a.pfb></usr/local/texlive/2015/te
 xmf-dist/fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on main.pdf (35 pages, 4707330 bytes).
+Output written on main.pdf (35 pages, 4707464 bytes).
 PDF statistics:
  566 PDF objects out of 1000 (max. 8388607)
  502 compressed objects within 6 object streams
