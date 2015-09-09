@@ -2,7 +2,7 @@
 Glavno sučelje Unity platforme se može vidjeti na slici \ref{fig:unitysucelje}. Raspored koji se može vidjeti je optimalniji za rad ukoliko programer ima samo jedan monitor. U slučaju da programer ima više monitora onda bi se mogao napraviti puno pregledniji raspored. 
 \subsection{Korisničko sučelje}
 \subsubsection{Inspektor}
-Inspektor (\emph{eng.~Inspector}) je dio korisničkog sučelja koji se koristi za provjeravanje pojedinih opcija komponenta igrajućih objekata (\emph{eng.~GameObject}). Pomoću njega je moguće dodavati elemente i obavljati operacije nad njima, te vidjeti sve moguće stavke o objektu.
+Inspektor (\emph{eng.~Inspector}) je dio korisničkog sučelja koji se koristi za provjeravanje pojedinih opcija komponenta igrajućih objekata (\emph{eng.~GameObject}). Pomoću njega je moguće dodavati elemente i obavljati operacije nad njima te vidjeti sve moguće stavke o objektu.
 
 \begin{figure}[h]
 	\includegraphics[width=12.5cm, height=10cm]{unitysucelje.png}
@@ -41,18 +41,18 @@ Trgovina (\emph{eng.~Asset Store}) se koristi za kupnju ili nabavljanje gotovih 
 Svaki objekt koji se može vidjeti u Unity platformi je \textbf{igrajući objekt}. Kada se napravi bilo koji objekt on treba imati svoju poziciju unutar svijeta. Kako bi se mogla znati njegova pozicija koristimo komponente. Svaki objekt mora imati svoju transformaciju (\emph{eng.~ Transform}). U suštini igrajući objekti su samo kontejneri koji sadrže komponente.
 
 \subsection{Kamera}
-Kamere se koriste za prikaz igre. Koristeći više kamera moguće je napraviti različite efekte i animacije za igrača, te stvoriti jedinstveno iskustvo tijekom igranja igre. Kamere imaju dvije moguće projekcije (ortografijsku i perspektivnu). Ortografijska se koristi za 2D igrice ili ako nije bitna dubina u igricama. Najčešće su to neke platformske igre, puzzle ili slično. Perspektivna se koristi ako želimo pokazati dubinu u igri. U ovoj igri se koristi perspektivna projekcija, te je postavljena kao dijete automobilskog igrajućeg objekta. Na ovaj način kamera slijedi automobil i dobiva se pravo iskustvo vožnje automobila.
+Kamere se koriste za prikaz igre. Koristeći više kamera moguće je napraviti različite efekte i animacije za igrača te stvoriti jedinstveno iskustvo tijekom igranja igre. Kamere imaju dvije moguće projekcije (ortografijsku i perspektivnu). Ortografijska se koristi za 2D igrice ili ako nije bitna dubina u igricama. Najčešće su to neke platformske igre, puzzle ili slično. Perspektivna se koristi ako želimo pokazati dubinu u igri. U ovoj igri se koristi perspektivna projekcija te je postavljena kao dijete automobilskog igrajućeg objekta. Na ovaj način kamera slijedi automobil i dobiva se pravo iskustvo vožnje automobila.
 \subsection{Svijetlo}
-Svijetla se naravno koriste za osvijetljavanje svijeta, ali i za stvaranje ugođaja. Moguće je mijenjati boje svijetla, te tako stvarati prekrasne ambijente. Može se definirati spektar, doseg, boja, tip, intenzitet, intenzitet odbijanja, sjena i ostale naprednije funkcije. Zanimljivo je što se može definirati da svjetlo ne baca sjenu za igrajuće objekte.
+Svijetla se naravno koriste za osvijetljavanje svijeta, ali i za stvaranje ugođaja. Moguće je mijenjati boje svijetla te tako stvarati prekrasne ambijente. Može se definirati spektar, doseg, boja, tip, intenzitet, intenzitet odbijanja, sjena i ostale naprednije funkcije. Zanimljivo je što se može definirati da svjetlo ne baca sjenu za igrajuće objekte.
 
 Za bolju funkcionalnost se može preko padajućeg izbornika na svijetlu postaviti da je već ispečeno (\emph{eng.~Baked}). Ovo znači da će se sva svijetla prilikom pokretanja igre izračunati i postaviti za igrajuće objekte koji se ne kreću. Ovo je veoma praktično jer nema potrebe preračunavati za te objekte utjecaj sa svjetlom, već će se to obavljati ukoliko pokraj njega dođe ne-statičan objekt.
 \newpage
 
 \subsection{Montažni objekti}
-Montažni objekt (\emph{eng.~Prefab}) je objekt koji je već napravljen, te se želi multiplicirati više puta. Ako se koristi više istih igrajućih objekata, kao na primjer više istih automobila koji dijele sve funkcionalnosti, tada nije praktično raditi promjene nad svakim automobilom zasebno, te se zato koriste montažni objekti. Kada se napravi novi igrajući objekt može se od njega napraviti montažni objekt preko izbornika \emph{Asset}, pa zatim \emph{Create Prefab}. Nakon što se napravi montažni objekt može se jednostavno povlačiti u svijet, te tako stvarati nove instance igrajućih objekata, koje dijele iste funkcionalnosti. Sada ako se nešto želi promijeniti, može se mijenjati bilo koji od objekata i Unity će pitati da li treba primjeniti ove promjene i na ostale instance ovog montažnog objekta.
+Montažni objekt (\emph{eng.~Prefab}) je objekt koji je već napravljen te se želi multiplicirati više puta. Ako se koristi više istih igrajućih objekata, kao na primjer više istih automobila koji dijele sve funkcionalnosti, tada nije praktično raditi promjene nad svakim automobilom zasebno te se zato koriste montažni objekti. Kada se napravi novi igrajući objekt može se od njega napraviti montažni objekt preko izbornika \emph{Asset}, pa zatim \emph{Create Prefab}. Nakon što se napravi montažni objekt može se jednostavno povlačiti u svijet te tako stvarati nove instance igrajućih objekata, koje dijele iste funkcionalnosti. Sada ako se nešto želi promijeniti, može se mijenjati bilo koji od objekata i Unity će pitati da li treba primjeniti ove promjene i na ostale instance ovog montažnog objekta.
 
 \subsection{Komponente}
-Komponente su dijelovi igrajućih objekata. One daju funkcionalnost objektima, te omogućavaju krajnjim korisnicima da razlikuju igrajuće objekte. Neke važnije komponente koje su korištene za izradu igrice su:
+Komponente su dijelovi igrajućih objekata. One daju funkcionalnost objektima te omogućavaju krajnjim korisnicima da razlikuju igrajuće objekte. Neke važnije komponente koje su korištene za izradu igrice su:
 
 \begin{itemize} 
 	\item Kruta tijela
@@ -68,9 +68,9 @@ Sudarači (\emph{eng.~ Colliders}) su komponente koje omogućavaju igrajućim ob
 
 Unity u svakom trenutku provjerava da li je sudarač imao koliziju sa nekim drugim igrajućim objektom koji isto ima svoj sudarač. Kada bi se oblik postavio da savršeno odgovara mreži igrajućeg objekta, tada bi trebalo obavljati previše računanja. U igri se sudarač u obliku kvadra za tijelo modela jer veoma dobro aproksimira automobil, a za kotače se koriste kolni sudarači.
 
-Unity ima predefinirane elemente za simulaciju pravih kotača prizemljenih vozila koje zovemo \textbf{kolni sudarači} (\emph{eng.~Wheel Colliders}). Prema dokumentaciji Unity platforme ovi sudarači se ne dodaju kao komponente, već trebaju biti komponente zasebnih igrajućih objekata. Znači za svaki kotač treba napraviti novi igrajući objekt, koji se zove prazni igrajući objekt (\emph{eng.~Empty GameObject}), te se komponenta doda praznom objektu. Cijeli igrajući objekt se pomakne tako da je centriran sa kotačima.
+Unity ima predefinirane elemente za simulaciju pravih kotača prizemljenih vozila koje zovemo \textbf{kolni sudarači} (\emph{eng.~Wheel Colliders}). Prema dokumentaciji Unity platforme ovi sudarači se ne dodaju kao komponente, već trebaju biti komponente zasebnih igrajućih objekata. Znači za svaki kotač treba napraviti novi igrajući objekt, koji se zove prazni igrajući objekt (\emph{eng.~Empty GameObject}) te se komponenta doda praznom objektu. Cijeli igrajući objekt se pomakne tako da je centriran sa kotačima.
 
-Najvažnije metode za vožnju su moment motora (\emph{eng.~Motor Torque}), moment kočnice (\emph{eng.~Brake Torque}), te kut okretanja (\emph{eng.~Steer Angle}). Moment motora je sila koja djeluje na osovinu kotača izražena u Newton metrima. Predznak sile će odrediti smjer kretanja. Kut okretanja određuje za koliko će se okrenuti model prilikom skretanja, a moment kočnice određuje silu kočenja u Newton metrima. Primjer k\^oda za kretanje vozila se može vidjeti u ispisu \ref{kretanjeVozila}
+Najvažnije metode za vožnju su moment motora (\emph{eng.~Motor Torque}), moment kočnice (\emph{eng.~Brake Torque}) te kut okretanja (\emph{eng.~Steer Angle}). Moment motora je sila koja djeluje na osovinu kotača izražena u Newton metrima. Predznak sile će odrediti smjer kretanja. Kut okretanja određuje za koliko će se okrenuti model prilikom skretanja, a moment kočnice određuje silu kočenja u Newton metrima. Primjer k\^oda za kretanje vozila se može vidjeti u ispisu \ref{kretanjeVozila}
 
 \begin{lstlisting}[caption={Skripta za kretanje vozila}, label=kretanjeVozila]
 for(int i = 0; i < 4; i++)
@@ -102,12 +102,12 @@ Igrajući objekti moraju imati svoju \textbf{transformaciju}, inače se neće mo
 	\label{fig:kotaci}
 \end{figure}
 
-Kako je navedeno u prethodnom poglavlju kotači se sastoje od više komponenti. Te komponente su mreža (\emph{eng.~Mesh}), transformacija, te mrežno renderiranje (\emph{eng.~Mesh Renderer}) koji dopušta korisniku da vidi konačni element. Ono što se koristi za kretanje modela je kolni sudarač. Mreža se može vidjeti na slici \ref{fig:kotaci} desno, a sudarač na slici \ref{fig:kotaci} lijevo. Isto tako veoma bitna stvar je povećati masu modela, inače će početi nekontrolirano rotirati na sceni, kao da je upalo u crnu rupu. Vrijednost mase u konačnici definira kojom silom će gravitacija privlačiti model, odnosno definiramo brzinu. Što je masa veća sporiji je igrajući objekt i obrnuto.
+Kako je navedeno u prethodnom poglavlju kotači se sastoje od više komponenti. Te komponente su mreža (\emph{eng.~Mesh}), transformacija te mrežno renderiranje (\emph{eng.~Mesh Renderer}) koji dopušta korisniku da vidi konačni element. Ono što se koristi za kretanje modela je kolni sudarač. Mreža se može vidjeti na slici \ref{fig:kotaci} desno, a sudarač na slici \ref{fig:kotaci} lijevo. Isto tako veoma bitna stvar je povećati masu modela, inače će početi nekontrolirano rotirati na sceni, kao da je upalo u crnu rupu. Vrijednost mase u konačnici definira kojom silom će gravitacija privlačiti model, odnosno definiramo brzinu. Što je masa veća sporiji je igrajući objekt i obrnuto.
 
 \subsubsection{Rotiranje kotača}
 Prilikom vožnje automobila za bolju simulaciju potrebno je okretati i kola. Za isprogramirati ovu naizgled jednostavnu radnju više stvari treba unaprijed biti dobro definirano, inače se stvar komplicira. Ukoliko je igrajući objekt loše definiran i pivoti nisu dobro postavljeni na kotačima, zbog mehanike koju Unity koristi, objekti rotiraju krivo. Da bi se to ispravilo treba koristiti naprednije metode koje povećavaju broj linija k\^oda i stvaraju dodatne probleme. 
 
-Rotacija kotača bi trebala biti oko njegove osi, te se zato mora postaviti pivot u sredinu kotača. Ovo se obavlja tijekom izrade samog modela, te treba paziti na to prije unosa u unity. Ako se pivot nije centrirao prilikom izrade, onda se treba obavljati popravljanje. Koraci za popravljanje:
+Rotacija kotača bi trebala biti oko njegove osi te se zato mora postaviti pivot u sredinu kotača. Ovo se obavlja tijekom izrade samog modela te treba paziti na to prije unosa u unity. Ako se pivot nije centrirao prilikom izrade, onda se treba obavljati popravljanje. Koraci za popravljanje:
 
 \begin{enumerate}
 	\item Pronaći objekt (kotač) unutar hijerarhije.
@@ -119,4 +119,4 @@ Sada se za okretanje kotača se koristi novi prazni objekt jer je njegov pivot c
 \subsubsection{Problemi u zavojima}
 Prilikom vožnje vozila dodavanjem samo kolnih sudarača ne bismo dobili potpunu imitaciju pravog vozila. Jedan od problema koji se javlja je preokretanje u zavojima. Ova pojava je sasvim opravdana i nije nikakva greška programa. Što se ustvari događa? Kada vozilo uđe u zavoj i započne skretanje, na njega djeluje centrifugalna sila, podigne se prednji kotač sa tla i kako ne postoji protusila preokrene se.
 
-Za ovaj slučaj postoji više rješenja, a onaj koji se koristi u igrici je sljedeći. Pri skretanju se provjeri koji kotač se podiže od tla i na njega se primjeni sila koja djeluje u smjeru gravitacije. Na ovaj način se smanji utjecaj centrifugalne sile, te samim time teže preokrenuti vozilo.
+Za ovaj slučaj postoji više rješenja, a onaj koji se koristi u igrici je sljedeći. Pri skretanju se provjeri koji kotač se podiže od tla i na njega se primjeni sila koja djeluje u smjeru gravitacije. Na ovaj način se smanji utjecaj centrifugalne sile te samim time teže preokrenuti vozilo.

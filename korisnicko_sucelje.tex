@@ -13,7 +13,7 @@ Sva platna su ustvari 2D objekti kojima je dodana dubina zbog prikaza u 3D prost
 Pod rasporedom (\emph{eng.~Layout}) se misli pozicija pojedinih elemenata unutar platna, dakle dimenzije i odnos prema drugim elementima. Sidrišta (\emph{eng.~Anchors}) imaju jako veliku ulogu pri odnosu pojedinih elemata, a o njima će više biti rečeno u nastavaku. Veličina platna se može mijenjati korištenjem alata \emph{Rect Transform}. Uglavnom se koristi za 2D objekte, ali naravno može i za 3D objekte. Isto tako se može mijenjati pozicija elemenata označavanjem i povlačenjem na željenu lokaciju. Potrebno je razlikovati, prilikom mijenjanja veličine objekta, da postoje dvije različite transformacije koje se čine jednake. Ako se koristi alat \emph{Rect Tool} označen objekt tada mijenja svoju veličinu (\emph{eng.~Scale}), a ako je selektiran \emph{Rect Transform} mijenjaju se dimenzije objekta (širina i visina). 
 
 \subsubsection{Sidrišta}
-Sidrišta su četiri trokutasta elementa koja definiraju točku od koje će se kretati elementi i koju će pratiti za promjene. Zanimljiva funkcionalnost koju omogućavaje je da element mijenja dimenzije ovisno o elemntu kojeg prati. Moguće je na drugi element postaviti da sidrište prati visinu odabranog elementa, te će se trenutni element mijenjati relativno s obzirom na pridruženi. Na slici \ref{fig:sidriste} je moguće vidjeti tekstualni element kojemu je sidrište postavljeno da prati gornji desni kut roditelja. Na ovaj način će se tekst uvijek pomicati relativno sa gornjim desnim kutom.
+Sidrišta su četiri trokutasta elementa koja definiraju točku od koje će se kretati elementi i koju će pratiti za promjene. Zanimljiva funkcionalnost koju omogućavaje je da element mijenja dimenzije ovisno o elemntu kojeg prati. Moguće je na drugi element postaviti da sidrište prati visinu odabranog elementa te će se trenutni element mijenjati relativno s obzirom na pridruženi. Na slici \ref{fig:sidriste} je moguće vidjeti tekstualni element kojemu je sidrište postavljeno da prati gornji desni kut roditelja. Na ovaj način će se tekst uvijek pomicati relativno sa gornjim desnim kutom.
 \begin{figure}[h]
 	\includegraphics[width=12.5cm, height=8cm]{sidriste.png}
 	\centering
@@ -21,7 +21,7 @@ Sidrišta su četiri trokutasta elementa koja definiraju točku od koje će se k
 	\label{fig:sidriste}
 \end{figure}
 \newline
-Sa desne strane na slici \ref{fig:sidriste} je moguće vidjeti sve komponente koje ima element, te standardne opcije kao što su x, y i z transformacija unutar roditelja, visina i širina, minimalna i maksimalna vrijednost sidrišta i veličina. Tekstu možemo definirati oblik, veličinu, poravnavanje i boju.
+Sa desne strane na slici \ref{fig:sidriste} je moguće vidjeti sve komponente koje ima element te standardne opcije kao što su x, y i z transformacija unutar roditelja, visina i širina, minimalna i maksimalna vrijednost sidrišta i veličina. Tekstu možemo definirati oblik, veličinu, poravnavanje i boju.
 
 \subsection{Tekst objekti}
 Tokom igranja se može u gornjem desnom kutu vidjeti tekst, koji pokazuje na kojem smo trenutno krugu, u gornjem lijevom kutu bodove koje je igrač ostvario, a prilikom završetka igre se prikazuje tekst koji govori da je igrač uspješno odvozio i ispisuje ukupne bodove koje je igrač sakupio. Ovo su ustvari tri različite tekstualna objekta preko čije se reference može mijenjati tekst iz skripti. 
@@ -31,14 +31,14 @@ Postoje dvije glavne podjele ovih modova:
 \begin{itemize} 
 	\item Pozicija zaslona (\emph{eng.~Screen Space}) - platno se pozicionira prema poziciji zaslona. 
 		\begin{itemize}
-			\item Prekriti (\emph{eng.~Overlay}) - svi objekti se izrađuju na platnu, te mijenjaju svoju veličinu ovisno o veličini platna
-			\item Kamera - svi objekti se izrađuju ovisno o postavkama kamere. Ako se na kameri promijeni perspektiva, tada će se i sami izgled sučelja mijenjati ovisno o udaljenosti, kutu, te svim ostalim parametrima koji su postavljeni.
+			\item Prekriti (\emph{eng.~Overlay}) - svi objekti se izrađuju na platnu te mijenjaju svoju veličinu ovisno o veličini platna
+			\item Kamera - svi objekti se izrađuju ovisno o postavkama kamere. Ako se na kameri promijeni perspektiva, tada će se i sami izgled sučelja mijenjati ovisno o udaljenosti, kutu te svim ostalim parametrima koji su postavljeni.
 		\end{itemize}
 	\item Pozicija svijeta (\emph{eng.~World Space}) - platno se ponaša kao svaki drugi igrajući objekt. Moći će se postaviti u pozadini iza nekih drugih igrajućih objekata ili slično. Primjer bi bio prikaz teksta koji se mijenja na nekakvom računalu.
 \end{itemize}
 
 \subsection{Glavni izbornik}
-Glavni izbornik (slika \ref{fig:glavniIzbornik}) se sastoji od tri igrajuća objekta, jednog teksta i dva botuna. Izborniku je pridružena i skripta koja kontrolira prikaz i funkcionalnost botuna. Koristi se ugrađena funkcionalnost Unity platforme za pozivanje metoda unutar skripte. Svaki botun ima okidač na klik, te se samo treba postaviti metoda koja se želi pozvati. U igri su to dvije metode započni novu igru \texttt{QuitGame} i izađi iz igre \texttt{StartNewGame}. 
+Glavni izbornik (slika \ref{fig:glavniIzbornik}) se sastoji od tri igrajuća objekta, jednog teksta i dva botuna. Izborniku je pridružena i skripta koja kontrolira prikaz i funkcionalnost botuna. Koristi se ugrađena funkcionalnost Unity platforme za pozivanje metoda unutar skripte. Svaki botun ima okidač na klik te se samo treba postaviti metoda koja se želi pozvati. U igri su to dvije metode započni novu igru \texttt{QuitGame} i izađi iz igre \texttt{StartNewGame}. 
 \begin{figure}[h]
 	\includegraphics[width=12.5cm, height=8cm]{glavni_izbornik.png}
 	\centering

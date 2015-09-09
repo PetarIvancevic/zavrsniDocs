@@ -72,7 +72,7 @@ Reference se sve nalaze unutar privatnih ili javnih varijabli, koje se zovu poda
 Klasa koja se koristi za kontrolu glavnog izbornika i pauziranje cijele igre. Skripta je pridružena igrajućem objektu \texttt{Menu} koja ima pristup svim igrajućim objektima unutar izbornika. Početna funkcija koja se koristi je \texttt{Awake()} koja se poziva prije \texttt{Start()} funkcija. Funkcije koje se koriste:
 \begin{itemize}
 	\item \texttt{void Awake()} - funkcija koja se prva pokreće i postavlja referencu za platno unutar podatkovnog člana \texttt{Menu}.
-	\item \texttt{private void HandlePauseGame()} - funkcija koja se poziva pritiskom tipke "esc", te ovisno o trenutnom stanju otvara ili zatvara glavni izbornik.
+	\item \texttt{private void HandlePauseGame()} - funkcija koja se poziva pritiskom tipke "esc" te ovisno o trenutnom stanju otvara ili zatvara glavni izbornik.
 	\item \texttt{void Update()} - funkcija koja se pokreće svaku sliku i koja provjerava da li je korisnik pritisnuo tipku "esc". Provjera se izvršava preko. \texttt{Input.GetKeyUp(KeyCode.Escape)} jer bi se inače pozivalo svaku sliku i ne bi bilo učinkovito.
 	\item \texttt{private void StartNewGame (int scene)} - funkcija koja se poziva preko klika na dugme unutar glavnog izbornika. Funkcija je povezana zahvaljujući unity-u, pa ne treba posebno unutar skripte provjeravati. Naredba \texttt{Application.LoadLevel(scene)} se koristi za ponovno pokretanje igre jer je scena koja se pokreće početna scena igre.
 	\item \texttt{private void QuitGame()} - isto tako funkcija koja se poziva klikom na dugme unutar izbornika. Izlaz iz igre je ostvaren preko \newline \texttt{Application.QuitGame()}.
